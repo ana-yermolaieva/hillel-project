@@ -1,0 +1,134 @@
+.about {
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__slider-btn-box {
+        display: none;
+    }
+
+    &__slider-item {
+        padding-bottom: 10px;
+    }
+
+    &__slider-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $red;
+        padding-bottom: 10px;
+    }
+
+    &__slider-title {
+        font-size: 22px;
+        line-height: 26px;
+        color: $white;
+        padding-bottom: 15px;
+    }
+
+    &__slider-text {
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+    }
+}
+
+@media (min-width: 565px) {
+    .about {
+        &__slider-item {
+            width: 525px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about {
+        &__slider {
+            flex-direction: row;
+            padding-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        &__slider-btn-box {
+            width: 43%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border-right: 4px solid $gray-medium;
+            padding-right: 40px;
+        }
+
+        &__slider-item {
+            width: 57%;
+        }
+
+        &__slider-title,
+        &__slider-text {
+            width: 500px;
+        }
+
+        &__slider-item-btn {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 50px;
+            color: $gray-text;
+            text-align: right;
+            position: relative;
+
+            &:hover,
+            &--current {
+                color: $red;
+            }
+
+            &--current::after {
+                content: "";
+                display: inline-flex;
+                width: 4px;
+                height: 50px;
+                background-color: $red;
+                position: absolute;
+                top: 0;
+                right: -44px;
+            }
+
+            &--current:last-child::after {
+                height: 100px;
+            }
+        }
+
+        &__slider-item {
+            padding-left: 40px;
+        }
+
+        &__slider-btn-list,
+        &__slider-name {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        &__slider-title {
+            font-size: 32px;
+            line-height: 38px;
+            width: 600px;
+        }
+
+        &__slider-text {
+            font-size: 21px;
+            line-height: 30px;
+            width: 600px;
+        }
+
+        &__slider-item-btn {
+            font-size: 42px;
+        }
+    }
+}

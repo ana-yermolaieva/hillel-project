@@ -14,11 +14,20 @@
 	overflow: hidden;
 }
 
+.container {
+	max-width: 1360px;
+	min-width: 375px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 a {
     display: inline-flex;
-    color: $white;
+    color: $blue-link;
     text-decoration: none;
-    &:hover {
-        color: $red;
-    }
+	text-align: center;
+
+	&:hover {
+		color: $red;
+	}
 }

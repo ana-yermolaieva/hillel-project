@@ -14,46 +14,91 @@
 	<title>hlegals</title>
 </head>
 <body>
-	<header class="header">
-		<div class="header__container container">
-			<a class="logo" href="index.html"><img class="logo__img" src="img/logo-hlegals-mobile.svg" width="78" height="31" alt="logo"></a>
-			<div class="header__lang-box">
-				<button class="header__lang btn" type="button">УК</button>
-				<button class="header__lang btn" type="button">РУ</button>
-				<button class="header__lang btn" type="button">EN</button>
+	<div class="background">
+		<header class="header container">
+			<div class="header__logo logo-box">
+				<a class="logo-box__logo" href="index.html"><img class="logo-box__img" src="img/logo-hlegals-mobile.svg" alt="logo"></a>
+				<a class="logo-box__page" href="#">публікації</a>
 			</div>
-			<div class="header__contact">
-				<p class="header__contact-address">Одеса, Адміральський пр., 3</p>
-				<a class="header__contact-tel" href="tel:+380503901591">+38 (050) 390 15 91</a>			
-				<a class="header__contact-fb" href="https://www.facebook.com/"></a>
+			<div class="header__top-box">
+				<div class="header__lang-box">
+					<button class="header__lang header__lang--current btn" type="button">УК</button>
+					<button class="header__lang btn" type="button">РУ</button>
+					<button class="header__lang btn" type="button">EN</button>
+				</div>
+				<div class="header__contact">
+					<p class="header__contact-address">Одеса, Адміральський пр., 3</p>
+					<a class="header__contact-tel" href="tel:+380503901591">+38 (050) 390 15 91</a>			
+					<a class="header__contact-fb" href="https://www.facebook.com/">
+						<svg class="header__fb-icon" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)">
+							<path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"/></g><defs><clipPath id="clip0">
+							<rect width="38" height="38" fill="white" transform="translate(0.5)"/></clipPath></defs>
+						</svg>
+					</a>
+				</div>
 			</div>
 			<div class="header__menu">
 				<a class="header__menu-link" href="#">о нас</a>
 				<a class="header__menu-link" href="#">послуги</a>
 				<a class="header__menu-link" href="#">команда</a>
-				<a class="header__menu-link" href="#">публікації</a>
+				<a class="header__menu-link header__menu-link--current" href="#">публікації</a>
 				<a class="header__menu-link" href="#">контакти</a>
 				<button class="header__menu-btn btn" type="button"></button>
 			</div>
+			<div class="header__menu-modal menu-modal">
+				<button class="menu-modal__btn btn" type="button"></button>
+				<a class="menu-modal__link menu-modal__link--active" href="#">о нас</a>
+				<a class="menu-modal__link" href="#">послуги</a>
+				<a class="menu-modal__link" href="#">команда</a>
+				<a class="menu-modal__link menu-modal__link--current" href="#">публікації</a>
+				<a class="menu-modal__link" href="#">контакти</a>
+			</div>
+			<div class="mask"></div>
+		</header>
+		<div class="header__content-box">
+			<div class="header__content-symbol">
+				<div class="header__content container">
+					<h1 class="header__content-title">системний адміністратор правових рішень</h1>
+					<a class="header__content-btn" href="#service-block"></a>
+				</div>
+			</div>
 		</div>
-	</header>
+	</div>
 	<main class="main">
-		<section class="about">
-			<h1 class="about__title">системний адміністратор правових рішень</h1>
-			<a class="about__main-btn" href="#"></a>
-			<article class="about__slider">
-				<h2>Послідовні</h2>
-				<h2 class="about__slider-title">Перевертаємо уявлення про юридичні послуги</h2>
-				<p  class="about__slider-text">Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
-			</article>
-			<div class="services">
+		<div class="main__background background background--middle">
+			<section class="about container">
+				<h2 class="visually-hidden">Професійні якості</h2>
+				<div class="about__slider">
+					<div class="about__slider-btn-box">
+						<button class="about__slider-item-btn about__slider-item-btn--current btn" type="button">Послідовні</button>
+						<button class="about__slider-item-btn btn" type="button">Клієнтоорієнтовані</button>
+						<button class="about__slider-item-btn btn" type="button">Інноваційні</button>
+						<button class="about__slider-item-btn btn" type="button">Бізнес-орієнтовані
+							юристи</button>
+					</div>
+					<article class="about__slider-item">
+						<h3 class="about__slider-name">Послідовні</h3>
+						<h3 class="about__slider-title">Перевертаємо уявлення про юридичні послуги</h3>
+						<p  class="about__slider-text">Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+					</article>
+					<ul class="about__slider-btn-list slider-btn-list">
+						<li><button class="slider-btn-list__btn slider-btn-list__btn--current" type="button"></button></li>
+						<li><button class="slider-btn-list__btn" type="button"></button></li>
+						<li><button class="slider-btn-list__btn" type="button"></button></li>
+						<li><button class="slider-btn-list__btn" type="button"></button></li>
+					</ul>
+				</div>
+			</section>
+			<section class="services container" id="service-block">
 				<a class="services__page-link" href="#">послуги</a>
 				<h2 class="services__title">Що ми вміємо робити краще за інших?</h2>
 				<div class="services__box">
 					<article class="services__item-box">
 						<h3 class="visually-hidden">IT та електронна комерція</h3>
 						<div class="services__item">
-							<img class="services__item-icon" width="64" height="64" src="" alt="icon">
+							<div class="services__item-icon">
+								<div class="services__item-icon-bag"></div>
+							</div>
 							<a class="services__item-title" href="#">IT та електронна комерція</a>
 							<p class="services__item-text">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. </p>
 						</div>
@@ -62,7 +107,9 @@
 						<h3 class="visually-hidden">Комплексний щоденний
 							юридичний супровід</h3>
 						<div class="services__item">
-							<img class="services__item-icon" width="64" height="64" src="" alt="icon">
+							<div class="services__item-icon">
+								<div class="services__item-icon-case"></div>
+							</div>
 							<a class="services__item-title" href="#">Комплексний щоденний
 								юридичний супровід</a>
 							<p class="services__item-text">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
@@ -71,7 +118,9 @@
 					<article class="services__item-box">
 						<h3 class="visually-hidden">Структуризація корпоративних відносин</h3>
 						<div class="services__item">
-							<img class="services__item-icon" width="64" height="64" src="" alt="icon">
+							<div class="services__item-icon">
+								<div class="services__item-icon-corporate"></div>
+							</div>
 							<a class="services__item-title" href="#">Структуризація корпоративних відносин</a>
 							<p class="services__item-text">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії. </p>
 						</div>
@@ -79,7 +128,9 @@
 					<article class="services__item-box">
 						<h3 class="visually-hidden">Побудовa договірних відносин</h3>
 						<div class="services__item">
-							<img class="services__item-icon" width="64" height="64" src="" alt="icon">
+							<div class="services__item-icon">
+								<div class="services__item-icon-contract"></div>
+							</div>
 							<a class="services__item-title" href="#">Побудовa договірних відносин</a>
 							<p class="services__item-text">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.</p>
 						</div>
@@ -87,7 +138,9 @@
 					<article class="services__item-box">
 						<h3 class="visually-hidden">Захист бізнесу, інтелектуальної власності</h3>
 						<div class="services__item">
-							<img class="services__item-icon" width="64" height="64" src="" alt="icon">
+							<div class="services__item-icon">
+								<div class="services__item-icon-security"></div>
+							</div>
 							<a class="services__item-title" href="#">Захист бізнесу, інтелектуальної власності</a>
 							<p class="services__item-text">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.</p>
 						</div>
@@ -95,15 +148,26 @@
 					<article class="services__item-box">
 						<h3 class="visually-hidden">Судове представництво</h3>
 						<div class="services__item">
-							<img class="services__item-icon" width="64" height="64" src="" alt="icon">
+							<div class="services__item-icon">
+								<div class="services__item-icon-trial"></div>
+							</div>
 							<a class="services__item-title" href="#">Судове представництво</a>
 							<p class="services__item-text">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</p>
 						</div>
 					</article>
 				</div>
+			</section>
+		</div>
+		<div class="shadow container">
+			<div class="shadow__middle-wrap">
+				<div class="shadow__middle"></div>
 			</div>
-		</section>
-		<section class="command">
+			<div class="shadow__light-wrap">
+				<div class="shadow__light"></div>
+			</div>
+		</div>
+
+		<!-- <section class="command container">
 			<h2 class="visually-hidden">Our command</h2>
 			<article class="command__slider">
 				<h3 class="visually-hidden"></h3>
@@ -119,8 +183,39 @@
 				<button class="command__slider-btn" type="button"></button>
 				<button class="command__slider-btn" type="button"></button>
 			</article>
+		</section> -->
+
+		<section class="command container">
+			<h2 class="visually-hidden">Our command</h2>
+			<div class="command__slider">
+				<article class="command__slider-item-outer">
+					<h3 class="visually-hidden">команда</h3>
+					<div class="command__slider-item">
+						<div class="command__slider-link">
+							<a class="command__slider-link-title" href="#">команда</a>
+							<svg class="command__slider-link-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6 6L1.5 10.5" stroke-width="2"/>
+							</svg>
+						</div>
+						<h4 class="command__slider-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h4>
+					</div>
+					<img class="command__partner-img" src="" alt="photo">
+					<div class="command__partner-info">
+						<p class="command__partner-name command__partner-name--mobile">Олександр Кац</p>
+						<p class="command__partner-name command__partner-name--desktop">Олександр Олександровський</p>
+						<p class="command__partner-position">Керуючий партнер</p>
+					</div>
+				</article>
+				<ul class="slider-btn-list">
+					<li><button class="slider-btn-list__btn slider-btn-list__btn--current" type="button"></button></li>
+					<li><button class="slider-btn-list__btn" type="button"></button></li>
+					<li><button class="slider-btn-list__btn" type="button"></button></li>
+					<li><button class="slider-btn-list__btn" type="button"></button></li>
+				</ul>
+			</div>
 		</section>
-		<section class="case">
+
+		<!-- <section class="case container">
 			<h2 class="visually-hidden">Our cases</h2>
 			<article class="case__item">
 				<h3 class="case__item-title">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
@@ -146,16 +241,18 @@
 				<h3 class="case__item-title">Супровід проекту з кредитування агротрейдерів мальтійським банком</h3>
 				<p class="case__item-company-name">Clikky</p>
 			</article>
-		</section>
-		<section class="case">
+		</section> -->
+
+		<section class="case container">
 			<h2 class="visually-hidden">Our cases</h2>
-			<a class="case__item-link" href="#">Супровід проекту з купівлі-продажу сільськогосподарської продукції</a>
-			<a class="case__item-link" href="#">Підготовка комплексного юридичного висновку для європейського банку</a>
-			<a class="case__item-link" href="#">Супровід проекту з купівлі-продажу сільськогосподарської продукції</a>
-			<a class="case__item-link" href="#">Представництво інтересів великого зернотрейдера в податковому спорі</a>
-			<a class="case__item-link" href="#">Оскарження податкових повідомлень-рішень ДФС</a>
-			<a class="case__item-link" href="#">Супровід проекту з кредитування агротрейдерів мальтійським банком</a>
+			<a class="case__item case__item-hillel" href="#">Супровід проекту з купівлі-продажу сільськогосподарської продукції</a>
+			<a class="case__item case__item-wannabiz" href="#">Підготовка комплексного юридичного висновку для європейського банку </a>
+			<a class="case__item case__item-tapgerine" href="#">Супровід проекту з купівлі-продажу сільськогосподарської продукції</a>
+			<a class="case__item case__item-3dlook" href="#">Представництво інтересів великого зернотрейдера в податковому спорі</a>
+			<a class="case__item case__item-adtelligent" href="#">Оскарження податкових повідомлень-рішень ДФС</a>
+			<a class="case__item case__item-clikky" href="#">Супровід проекту з кредитування агротрейдерів мальтійським банком</a>
 		</section>
+
 		<section class="customers">
 			<h2 class="customers__title">Вже довіряють нам</h2>
 			<div class="customers__item"></div>
@@ -247,16 +344,25 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<div class="footer__address-box">
-			<p class="footer__address">Одеса, Адміральський пр., 3</p>
-			<a class="footer__address-link" href="#">Подивитися на мапі</a>
+		<div class="container">
+			<div class="footer__separator">
+				<div class="footer__address-box">
+					<p class="footer__address">Одеса, Адміральський пр., 3</p>
+					<a class="footer__address-link" href="#">Подивитися на мапі</a>
+				</div>
+				<div class="footer__contact">
+					<a class="footer__contact-fb" href="https://www.facebook.com/">
+						<svg class="footer__fb-icon" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)">
+							<path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"/></g><defs><clipPath id="clip0">
+							<rect width="38" height="38" fill="white" transform="translate(0.5)"/></clipPath></defs>
+						</svg>
+					</a>
+					<a class="footer__contact-tel" href="tel:+380503901591">+38 (050) 390 15 91</a>
+					<a class="footer__contact-mail" href="mailto:contact@hlegals.net">contact@hlegals.net</a>
+				</div>
+				<p class="footer__copyright">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+			</div>
 		</div>
-		<div class="footer__contact">
-			<a class="footer__contact-fb" href="https://www.facebook.com/"></a>
-			<a class="footer__contact-tel" href="tel:+380503901591">+38 (050) 390 15 91</a>
-			<a class="footer__contact-mail" href="mailto:contact@hlegals.net">contact@hlegals.net</a>
-		</div>
-		<p class="footer__copyright">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
 	</footer>
 </body>
 </html>

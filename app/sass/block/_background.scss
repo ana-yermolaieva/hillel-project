@@ -1,0 +1,10 @@
+.background {
+    background: $gradient-soft;
+    background-color: $purple;
+    // max-width: 1360px;
+    // margin: 0 auto;
+    &--middle {
+        background: $gradient-supersoft;
+        border-radius: 0px 0px 12px 12px;
+    }
+}

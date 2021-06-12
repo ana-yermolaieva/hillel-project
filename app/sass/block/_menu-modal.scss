@@ -1,0 +1,47 @@
+.menu-modal {
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0 20px;
+    
+    &__link {
+        font-size: 24px;
+        line-height: 28px;
+        color: $blue-link;
+        background-color: $gray-bg;
+        border-radius: 12px;
+        width: 100%;
+        justify-content: center;
+        padding: 8px 20px;
+        margin-bottom: 10px;
+    }
+
+    &__link--active {
+        background-color: $gray-bg-alt;
+    }
+
+    &__link--current {
+        color: $red;
+    }
+
+    &__btn {
+        width: 32px;
+        height: 32px;
+        align-self: flex-end;
+        background-color: $gray-bg-alt;
+        background-image: url(../img/close-btn.svg);
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 481px) {
+    .menu-modal {
+        width: 440px;
+    }
+}

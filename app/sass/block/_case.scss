@@ -1,0 +1,209 @@
+.case {
+    padding-top: 40px;
+    &__item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $purple-light;
+        text-align: left;
+        background-color: $gray-bg;
+        padding: 20px 20px 60px;
+        border-radius: 0;
+        border-bottom: 1px solid $white;
+        position: relative;
+
+        &:first-of-type {
+            border-radius: 12px 12px 0 0;
+        }
+
+        &:last-of-type {
+            border-radius: 0 0 12px 12px;
+            border-bottom: none;
+        }
+
+        &:hover {
+            color: $purple-light;
+            background-color: $gray-bg-alt; 
+        }
+    }
+
+    &__item-hillel::after {
+        content: "Hillel IT School";
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        color: $gray-text;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &__item-wannabiz::after {
+        content: "WannaBiz";
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        color: $gray-text;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &__item-tapgerine::after {
+        content: "tapgerine";
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        color: $gray-text;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &__item-3dlook::after {
+        content: "3dlook";
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        color: $gray-text;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &__item-adtelligent::after {
+        content: "adtelligent";
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        color: $gray-text;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &__item-clikky::after {
+        content: "clikky";
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        color: $gray-text;
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+@media (min-width: 481px) {
+    .case {
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+            width: 50%;
+    
+            &:first-of-type {
+                border-radius: 12px 0 0 0;
+            }
+
+            &:nth-of-type(2) {
+                border-radius: 0 12px 0 0;
+            }
+
+            &:nth-of-type(5) {
+                border-radius: 0 0 0 12px;
+            }
+            
+            &:last-of-type {
+                border-radius: 0 0 12px 0;
+            }
+
+            &:nth-of-type(odd) {
+                border-right: 1px solid $white;
+            }
+
+            &:nth-of-type(5),
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .case {
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+            width: 33.333%;
+
+    
+            &:first-of-type {
+                border-radius: 12px 0 0 0;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(5) {
+                border-radius: 0;
+            }
+
+            &:nth-of-type(3) {
+                border-radius: 0 12px 0 0;
+            } 
+
+            &:nth-of-type(4) {
+                border-radius: 0 0 0 12px;
+            } 
+
+            &:nth-of-type(6) {
+                border-radius: 0 0 12px 0;
+            }
+
+            &:nth-of-type(odd) {
+                border-right: none;
+            }
+
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(4),
+            &:nth-of-type(5) {
+                border-right: 1px solid $white;
+            }
+
+            &:nth-of-type(4) {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .case {
+        &__item {
+            font-size: 24px;
+            line-height: 28px;
+            
+            &::after {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .case {
+        &__item {
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .case {
+        &__item {
+            padding-right: 60px;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .case {
+        &__item {
+            padding-right: 80px;
+        }
+    }
+}
