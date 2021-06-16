@@ -1,10 +1,35 @@
 .background {
     background: $gradient-soft;
+    background-repeat: no-repeat;
     background-color: $purple;
-    // max-width: 1360px;
-    // margin: 0 auto;
+    position: relative;
+
     &--middle {
         background: $gradient-supersoft;
         border-radius: 0px 0px 12px 12px;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% - 80px);
+        height: 20px;
+        bottom: -20px;
+        left: 40px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    &::before {
+        background-color: $gradient-shadow-light;
+    }
+
+    &::after {
+        width: calc(100% - 40px);
+        height: 10px;
+        bottom: -10px;
+        left: 20px;
+        background-color: $gradient-shadow-middle;
     }
 }

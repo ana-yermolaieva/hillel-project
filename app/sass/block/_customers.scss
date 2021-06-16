@@ -1,0 +1,158 @@
+.customers {
+    background-color: $white;
+
+    &__title {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $purple;
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: $gray-medium;
+    }
+
+    &__item {
+        width: 50%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__item-hillel {
+        background-color: $blue-dark;    
+    }
+
+    &__item-wannabiz {
+        background-color: $dark;    
+    }
+
+    &__item-targerine {
+        background-color: $orange;    
+    }
+
+    &__item-3dlook {
+        background-color: $bright-purple;    
+    }
+
+    &__item-oranger {
+        background-color: $orange-light;    
+    }
+
+    &__item-adtelligent {
+        background-color: $gray-light;    
+    }
+
+    &__item-clikky {
+        background-color: $bright-red;    
+    }
+
+    &__item-ecoleasing {
+        background-color: $sky;    
+    }
+
+    &__item-infratek {
+        background-color: $light-gray;    
+    }
+
+    &__item-citypark {
+        background-color: $dark-purple;    
+    }
+
+    &__item-artprint {
+        background-color: $indigo;    
+    }
+
+    &__item-ultimatecard {
+        background-color: $black;    
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__img-targerine {
+        width: 161px;
+        height: 40px;     
+    }
+
+    &__img-oranger {
+        width: 144px;
+        height: 36px;     
+    }
+
+    &__img-adtelligent {
+        width: 129px;
+        height: 33px;     
+    }
+
+    &__img-clikky {
+        width: 112px;
+        height: 49px;     
+    }
+
+    &__img-citypark {
+        width: 132px;
+        height: 28px;    
+    }
+}
+
+@media (min-width: 768px) {
+    .customers {
+        &__item {
+            width: 33.333%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .customers {
+        &__item {
+            width: 25%;
+        }
+    }
+}
+
+@media (min-width: 1101px) {
+    .customers {
+        &__item {
+            height: 120px;
+        }
+
+        &__img-targerine {
+            width: 179px;
+            height: 44px;     
+        }
+
+        &__img-oranger {
+            width: 174px;
+            height: 44px;     
+        }
+    
+        &__img-adtelligent {
+            width: 187px;
+            height: 48px;     
+        }
+    
+        &__img-clikky {
+            width: 138px;
+            height: 61px;     
+        }
+    
+        &__img-citypark {
+            width: 181px;
+            height: 38px;    
+        }
+    }
+}

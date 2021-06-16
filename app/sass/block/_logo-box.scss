@@ -28,6 +28,10 @@
         line-height: 22px;
         color: $white;
 
+        &--light {
+            color: $purple;
+        }
+
         &::after {
             content: "";
             display: inline-flex;

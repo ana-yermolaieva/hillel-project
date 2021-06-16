@@ -1,9 +1,7 @@
 .slider-btn-list {
-    width: 106px;
     list-style: none;
     padding-left: 0;
     display: flex;
-    justify-content: space-between;
 
     &__btn {
         width: 16px;
@@ -11,7 +9,7 @@
         border: none;
         border-radius: 50%;
         background-color: $blue-pg-simple;
-        
+
         &:hover {
             background-color: $blue-pg-hover;
         }
@@ -19,5 +17,9 @@
         &--current {
             background-color: $blue-link;
         }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 14px;
     }
 }

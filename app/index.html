@@ -17,7 +17,9 @@
 	<div class="background">
 		<header class="header container">
 			<div class="header__logo logo-box">
-				<a class="logo-box__logo" href="index.html"><img class="logo-box__img" src="img/logo-hlegals-mobile.svg" alt="logo"></a>
+				<a class="logo-box__logo" href="index.html">
+					<img class="logo-box__img" src="img/logo-hlegals-dark.svg" alt="logo">
+				</a>
 				<a class="logo-box__page" href="#">публікації</a>
 			</div>
 			<div class="header__top-box">
@@ -30,7 +32,7 @@
 					<p class="header__contact-address">Одеса, Адміральський пр., 3</p>
 					<a class="header__contact-tel" href="tel:+380503901591">+38 (050) 390 15 91</a>			
 					<a class="header__contact-fb" href="https://www.facebook.com/">
-						<svg class="header__fb-icon" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)">
+						<svg class="header__fb-icon header__fb-icon--dark" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)">
 							<path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"/></g><defs><clipPath id="clip0">
 							<rect width="38" height="38" fill="white" transform="translate(0.5)"/></clipPath></defs>
 						</svg>
@@ -38,35 +40,25 @@
 				</div>
 			</div>
 			<div class="header__menu">
-				<a class="header__menu-link" href="#">о нас</a>
-				<a class="header__menu-link" href="#">послуги</a>
-				<a class="header__menu-link" href="#">команда</a>
-				<a class="header__menu-link header__menu-link--current" href="#">публікації</a>
-				<a class="header__menu-link" href="#">контакти</a>
 				<button class="header__menu-btn btn" type="button"></button>
-			</div>
-			<div class="header__menu-modal menu-modal">
-				<button class="menu-modal__btn btn" type="button"></button>
-				<a class="menu-modal__link menu-modal__link--active" href="#">о нас</a>
-				<a class="menu-modal__link" href="#">послуги</a>
-				<a class="menu-modal__link" href="#">команда</a>
-				<a class="menu-modal__link menu-modal__link--current" href="#">публікації</a>
-				<a class="menu-modal__link" href="#">контакти</a>
-			</div>
-			<div class="mask"></div>
-		</header>
-		<div class="header__content-box">
-			<div class="header__content-symbol">
-				<div class="header__content container">
-					<h1 class="header__content-title">системний адміністратор правових рішень</h1>
-					<a class="header__content-btn" href="#service-block"></a>
+				<div class="header__menu-list header__menu-list-mobile">
+					<button class="header__menu-btn-close header__menu-btn-close--active btn" type="button"></button>
+					<a class="header__menu-link header__menu-link-mobile" href="#">о нас</a>
+					<a class="header__menu-link header__menu-link-mobile" href="#">послуги</a>
+					<a class="header__menu-link header__menu-link-mobile" href="#">команда</a>
+					<a class="header__menu-link header__menu-link-mobile header__menu-link--current" href="#">публікації</a>
+					<a class="header__menu-link header__menu-link-mobile" href="#">контакти</a>
 				</div>
 			</div>
+		</header>
+		<div class="header__content container">
+			<h1 class="header__content-title">системний адміністратор правових рішень</h1>
+			<a class="header__content-btn" href="#service-block"></a>
 		</div>
 	</div>
 	<main class="main">
 		<div class="main__background background background--middle">
-			<section class="about container">
+			<section class="about main__about container">
 				<h2 class="visually-hidden">Професійні якості</h2>
 				<div class="about__slider">
 					<div class="about__slider-btn-box">
@@ -82,124 +74,121 @@
 						<p  class="about__slider-text">Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
 					</article>
 					<ul class="about__slider-btn-list slider-btn-list">
-						<li><button class="slider-btn-list__btn slider-btn-list__btn--current" type="button"></button></li>
-						<li><button class="slider-btn-list__btn" type="button"></button></li>
-						<li><button class="slider-btn-list__btn" type="button"></button></li>
-						<li><button class="slider-btn-list__btn" type="button"></button></li>
+						<li class="slider-btn-list__item">
+							<button class="slider-btn-list__btn slider-btn-list__btn--current" type="button"></button>
+						</li>
+						<li class="slider-btn-list__item">
+							<button class="slider-btn-list__btn" type="button"></button>
+						</li>
+						<li class="slider-btn-list__item">
+							<button class="slider-btn-list__btn" type="button"></button>
+						</li>
+						<li class="slider-btn-list__item">
+							<button class="slider-btn-list__btn" type="button"></button>
+						</li>
 					</ul>
 				</div>
 			</section>
 			<section class="services container" id="service-block">
-				<a class="services__page-link" href="#">послуги</a>
+				<a class="indicator" href="#">послуги
+					<svg class="indicator__arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.5 1.5L6 6L1.5 10.5" stroke-width="2"/>
+					</svg>
+				</a>
 				<h2 class="services__title">Що ми вміємо робити краще за інших?</h2>
 				<div class="services__box">
 					<article class="services__item-box">
-						<h3 class="visually-hidden">IT та електронна комерція</h3>
+						<h3 class="visually-hidden">IT та електронна комерція</h3>
 						<div class="services__item">
-							<div class="services__item-icon">
-								<div class="services__item-icon-bag"></div>
+							<div class="services__item-info">
+								<div class="services__item-icon">
+									<div class="services__item-icon-bag"></div>
+								</div>
+								<a class="services__item-title" href="#">IT та електронна комерція</a>
 							</div>
-							<a class="services__item-title" href="#">IT та електронна комерція</a>
 							<p class="services__item-text">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. </p>
 						</div>
 					</article>
 					<article class="services__item-box">
-						<h3 class="visually-hidden">Комплексний щоденний
-							юридичний супровід</h3>
+						<h3 class="visually-hidden">Комплексний щоденний юридичний супровід</h3>
 						<div class="services__item">
-							<div class="services__item-icon">
-								<div class="services__item-icon-case"></div>
+							<div class="services__item-info">
+								<div class="services__item-icon">
+									<div class="services__item-icon-bag"></div>
+								</div>
+								<a class="services__item-title" href="#">Комплексний щоденний юридичний супровід</a>
 							</div>
-							<a class="services__item-title" href="#">Комплексний щоденний
-								юридичний супровід</a>
 							<p class="services__item-text">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
 						</div>
 					</article>
 					<article class="services__item-box">
-						<h3 class="visually-hidden">Структуризація корпоративних відносин</h3>
+						<h3 class="visually-hidden">Комплексний щоденний юридичний супровід</h3>
 						<div class="services__item">
-							<div class="services__item-icon">
-								<div class="services__item-icon-corporate"></div>
+							<div class="services__item-info">
+								<div class="services__item-icon">
+									<div class="services__item-icon-bag"></div>
+								</div>
+								<a class="services__item-title" href="#">Комплексний щоденний юридичний супровід</a>
 							</div>
-							<a class="services__item-title" href="#">Структуризація корпоративних відносин</a>
 							<p class="services__item-text">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії. </p>
 						</div>
 					</article>
 					<article class="services__item-box">
-						<h3 class="visually-hidden">Побудовa договірних відносин</h3>
+						<h3 class="visually-hidden">Побудовa договірних відносин</h3>
 						<div class="services__item">
-							<div class="services__item-icon">
-								<div class="services__item-icon-contract"></div>
+							<div class="services__item-info">
+								<div class="services__item-icon">
+									<div class="services__item-icon-bag"></div>
+								</div>
+								<a class="services__item-title" href="#">Побудовa договірних відносин</a>
 							</div>
-							<a class="services__item-title" href="#">Побудовa договірних відносин</a>
 							<p class="services__item-text">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.</p>
 						</div>
 					</article>
 					<article class="services__item-box">
-						<h3 class="visually-hidden">Захист бізнесу, інтелектуальної власності</h3>
+						<h3 class="visually-hidden">Захист бізнесу, інтелектуальної власності</h3>
 						<div class="services__item">
-							<div class="services__item-icon">
-								<div class="services__item-icon-security"></div>
+							<div class="services__item-info">
+								<div class="services__item-icon">
+									<div class="services__item-icon-bag"></div>
+								</div>
+								<a class="services__item-title" href="#">Захист бізнесу, інтелектуальної власності</a>
 							</div>
-							<a class="services__item-title" href="#">Захист бізнесу, інтелектуальної власності</a>
 							<p class="services__item-text">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.</p>
 						</div>
 					</article>
 					<article class="services__item-box">
-						<h3 class="visually-hidden">Судове представництво</h3>
+						<h3 class="visually-hidden">Судове представництво</h3>
 						<div class="services__item">
-							<div class="services__item-icon">
-								<div class="services__item-icon-trial"></div>
+							<div class="services__item-info">
+								<div class="services__item-icon">
+									<div class="services__item-icon-bag"></div>
+								</div>
+								<a class="services__item-title" href="#">Судове представництво</a>
 							</div>
-							<a class="services__item-title" href="#">Судове представництво</a>
 							<p class="services__item-text">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</p>
 						</div>
 					</article>
 				</div>
 			</section>
 		</div>
-		<div class="shadow container">
-			<div class="shadow__middle-wrap">
-				<div class="shadow__middle"></div>
-			</div>
-			<div class="shadow__light-wrap">
-				<div class="shadow__light"></div>
-			</div>
-		</div>
-
-		<!-- <section class="command container">
-			<h2 class="visually-hidden">Our command</h2>
-			<article class="command__slider">
-				<h3 class="visually-hidden"></h3>
-				<div class="command__slider-inner">
-					<a class="command__page-link" href="#">команда</a>
-					<h4 class="command__slider-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h4>
-					<img class="command__partner-img" src="" alt="photo">
-					<p class="command__partner-name command__partner-name--mobile">Олександр Кац</p>
-					<p class="command__partner-name command__partner-name--desktop">Олександр Олександровський</p>
-					<p class="command__partner-position">Керуючий партнер</p>
-				</div>
-				<button class="command__slider-btn " type="button"></button>
-				<button class="command__slider-btn" type="button"></button>
-				<button class="command__slider-btn" type="button"></button>
-			</article>
-		</section> -->
-
-		<section class="command container">
+		<section class="command main__command container">
 			<h2 class="visually-hidden">Our command</h2>
 			<div class="command__slider">
 				<article class="command__slider-item-outer">
 					<h3 class="visually-hidden">команда</h3>
 					<div class="command__slider-item">
-						<div class="command__slider-link">
-							<a class="command__slider-link-title" href="#">команда</a>
-							<svg class="command__slider-link-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<a class="indicator" href="#">команда
+							<svg class="indicator__arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M1.5 1.5L6 6L1.5 10.5" stroke-width="2"/>
 							</svg>
-						</div>
+						</a>
 						<h4 class="command__slider-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h4>
 					</div>
-					<img class="command__partner-img" src="" alt="photo">
+					<picture class="command__partner-pic">
+						<source media="(min-width:992px)" srcset="img/command-partner-img.jpg">
+						<img class="command__partner-img" src="img/command-partner-img-mob.jpg" alt="partner photo">
+					</picture>
 					<div class="command__partner-info">
 						<p class="command__partner-name command__partner-name--mobile">Олександр Кац</p>
 						<p class="command__partner-name command__partner-name--desktop">Олександр Олександровський</p>
@@ -207,140 +196,204 @@
 					</div>
 				</article>
 				<ul class="slider-btn-list">
-					<li><button class="slider-btn-list__btn slider-btn-list__btn--current" type="button"></button></li>
-					<li><button class="slider-btn-list__btn" type="button"></button></li>
-					<li><button class="slider-btn-list__btn" type="button"></button></li>
-					<li><button class="slider-btn-list__btn" type="button"></button></li>
+					<li class="slider-btn-list__item">
+						<button class="slider-btn-list__btn slider-btn-list__btn--current" type="button"></button>
+					</li>
+					<li class="slider-btn-list__item">
+						<button class="slider-btn-list__btn" type="button"></button>
+					</li>
+					<li class="slider-btn-list__item">
+						<button class="slider-btn-list__btn" type="button"></button>
+					</li>
 				</ul>
 			</div>
 		</section>
-
-		<!-- <section class="case container">
+		<section class="case main__case container">
 			<h2 class="visually-hidden">Our cases</h2>
-			<article class="case__item">
-				<h3 class="case__item-title">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
-				<p class="case__item-company-name">Hillel IT School</p>
-			</article>
-			<article class="case__item">
-				<h3 class="case__item-title">Підготовка комплексного юридичного висновку для європейського банку</h3>
-				<p class="case__item-company-name">WannaBiz</p>
-			</article>
-			<article class="case__item">
-				<h3 class="case__item-title">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
-				<p class="case__item-company-name">tapgerine</p>
-			</article>
-			<article class="case__item">
-				<h3 class="case__item-title">Представництво інтересів великого зернотрейдера в податковому спорі</h3>
-				<p class="case__item-company-name">3D LOOK</p>
-			</article>
-			<article class="case__item">
-				<h3 class="case__item-title">Оскарження податкових повідомлень-рішень ДФС</h3>
-				<p class="case__item-company-name">adtelligent</p>
-			</article>
-			<article class="case__item">
-				<h3 class="case__item-title">Супровід проекту з кредитування агротрейдерів мальтійським банком</h3>
-				<p class="case__item-company-name">Clikky</p>
-			</article>
-		</section> -->
-
-		<section class="case container">
-			<h2 class="visually-hidden">Our cases</h2>
-			<a class="case__item case__item-hillel" href="#">Супровід проекту з купівлі-продажу сільськогосподарської продукції</a>
-			<a class="case__item case__item-wannabiz" href="#">Підготовка комплексного юридичного висновку для європейського банку </a>
-			<a class="case__item case__item-tapgerine" href="#">Супровід проекту з купівлі-продажу сільськогосподарської продукції</a>
-			<a class="case__item case__item-3dlook" href="#">Представництво інтересів великого зернотрейдера в податковому спорі</a>
-			<a class="case__item case__item-adtelligent" href="#">Оскарження податкових повідомлень-рішень ДФС</a>
-			<a class="case__item case__item-clikky" href="#">Супровід проекту з кредитування агротрейдерів мальтійським банком</a>
+			<a class="case__link" href="#">
+				<article class="case__item">
+					<h3 class="case__item-title">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
+					<p class="case__item-text">Hillel IT School</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#">
+				<article class="case__item">
+					<h3 class="case__item-title">Підготовка комплексного юридичного висновку для європейського банку</h3>
+					<p class="case__item-text">WannaBiz</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#">
+				<article class="case__item">
+					<h3 class="case__item-title">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
+					<p class="case__item-text">tapgerine</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#">
+				<article class="case__item">
+					<h3 class="case__item-title">Представництво інтересів великого зернотрейдера в податковому спорі</h3>
+					<p class="case__item-text">3dlook</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#">
+				<article class="case__item">
+					<h3 class="case__item-title">Оскарження податкових повідомлень-рішень ДФС</h3>
+					<p class="case__item-text">adtelligent</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#">
+				<article class="case__item">
+					<h3 class="case__item-title">Супровід проекту з кредитування агротрейдерів мальтійським банком</h3>
+					<p class="case__item-text">clikky</p>
+				</article> 
+			</a>
 		</section>
-
-		<section class="customers">
+		<section class="customers main__customers">
 			<h2 class="customers__title">Вже довіряють нам</h2>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-			<div class="customers__item"></div>
-		</section>
-		<section class="blog">
-			<h2 class="blog__title">
-				<a class="blog__page-link" href="#">Публікації</a>
-			</h2>
-			<div class="blog__box">
-				<article class="blog__item-outer blog__item-outer--mobile">
-					<h3 class="visually-hidden"></h3>
-					<div class="blog__item">
-						<a class="blog__item-link-img" href="">
-							<img class="blog__item-img" src="" alt="">
-						</a>
-						<h4 class="blog__item-title"></h4>
-						<p class="blog__item-date"></p>
-						<p class="blog__item-text blog__item-text--desktop"></p>
-					</div>
-				</article>
-				<article class="blog__item-outer blog__item-outer--mobile">
-					<h3 class="visually-hidden"></h3>
-					<div class="blog__item">
-						<a class="blog__item-link-img" href="">
-							<img class="blog__item-img" src="" alt="">
-						</a>
-						<h4 class="blog__item-title"></h4>
-						<p class="blog__item-date"></p>
-						<p class="blog__item-text blog__item-text--desktop"></p>
-					</div>
-				</article>
-				<article class="blog__item-outer blog__item-outer--desktop">
-					<h3 class="visually-hidden"></h3>
-					<div class="blog__item">
-						<a class="blog__item-link-img" href="">
-							<img class="blog__item-img" src="" alt="">
-						</a>
-						<h4 class="blog__item-title"></h4>
-						<p class="blog__item-date"></p>
-						<p class="blog__item-text blog__item-text--desktop"></p>
-					</div>
-				</article>
-				<article class="blog__item-outer blog__item-outer--desktop">
-					<h3 class="visually-hidden"></h3>
-					<div class="blog__item">
-						<a class="blog__item-link-img" href="">
-							<img class="blog__item-img" src="" alt="">
-						</a>
-						<h4 class="blog__item-title"></h4>
-						<p class="blog__item-date"></p>
-						<p class="blog__item-text blog__item-text--desktop"></p>
-					</div>
-				</article>
-				<article class="blog__item-outer blog__item-outer--desktop">
-					<h3 class="visually-hidden"></h3>
-					<div class="blog__item">
-						<a class="blog__item-link-img" href="">
-							<img class="blog__item-img" src="" alt="">
-						</a>
-						<h4 class="blog__item-title"></h4>
-						<p class="blog__item-date"></p>
-						<p class="blog__item-text blog__item-text--desktop"></p>
-					</div>
-				</article>
-				<article class="blog__item-outer blog__item-outer--desktop">
-					<h3 class="visually-hidden"></h3>
-					<div class="blog__item">
-						<a class="blog__item-link-img" href="">
-							<img class="blog__item-img" src="" alt="">
-						</a>
-						<h4 class="blog__item-title"></h4>
-						<p class="blog__item-date"></p>
-						<p class="blog__item-text blog__item-text--desktop"></p>
-					</div>
-				</article>
+			<div class="customers__box">
+				<div class="customers__item customers__item-hillel">
+					<picture class="customers__pic">
+						<source media="(min-width: 1101px)" srcset="img/customers-hillel.png">
+						<img class="customers__img customers__img-hillel" src="img/customers-hillel-mob.png" alt="hillel">
+					</picture>
+				</div>
+				<div class="customers__item customers__item-wannabiz">
+					<picture class="customers__pic">
+						<source media="(min-width: 1101px)" srcset="img/customers-wannabiz.png">
+						<img class="customers__img customers__img-wannabiz" src="img/customers-wannabiz-mob.png" alt="wannabiz">
+					</picture>
+				</div>
+				<div class="customers__item customers__item-targerine">
+					<img class="customers__img customers__img-targerine" src="img/customers-targerine-mob.svg" alt="targerine">
+				</div>
+				<div class="customers__item customers__item-3dlook">
+					<picture class="customers__pic">
+						<source media="(min-width: 1101px)" srcset="img/customers-3dlook.png">
+						<img class="customers__img customers__img-3dlook" src="img/customers-3dlook-mob.png" alt="3dlook">
+					</picture>
+				</div>
+				<div class="customers__item customers__item-oranger">
+					<img class="customers__img customers__img-oranger" src="img/customers-oranger-mob.svg" alt="oranger">
+				</div>
+				<div class="customers__item customers__item-adtelligent">
+					<img class="customers__img customers__img-adtelligent" src="img/customers-adtelligent-mob.svg" alt="adtelligent">
+				</div>
+				<div class="customers__item customers__item-clikky">
+					<img class="customers__img customers__img-clikky" src="img/customers-clikky-mob.svg" alt="clikky">
+				</div>
+				<div class="customers__item customers__item-ecoleasing">
+					<picture class="customers__pic">
+						<source media="(min-width: 1101px)" srcset="img/customers-ecoleasing.png">
+						<img class="customers__img customers__img-ecoleasing" src="img/customers-ecoleasing-mob.png" alt="ecoleasing">
+					</picture>
+				</div>
+				<div class="customers__item customers__item-infratek">
+					<picture class="customers__pic">
+						<source media="(min-width: 1101px)" srcset="img/customers-infratek.png">
+						<img class="customers__img customers__img-infratek" src="img/customers-infratek-mob.png" alt="infratek">
+					</picture>
+				</div>
+				<div class="customers__item customers__item-citypark">
+					<img class="customers__img customers__img-citypark" src="img/customers-citypark-mob.svg" alt="citypark">
+				</div>
+				<div class="customers__item customers__item-artprint">
+					<picture class="customers__pic">
+						<source media="(min-width: 1101px)" srcset="img/customers-artprint.png">
+						<img class="customers__img customers__img-artprint" src="img/customers-artprint-mob.png" alt="artprint">
+					</picture>
+				</div>
+				<div class="customers__item customers__item-ultimatecard">
+					<picture class="customers__pic">
+						<source media="(min-width: 1101px)" srcset="img/customers-ultimatecard.png">
+						<img class="customers__img customers__img-ultimatecard" src="img/customers-ultimatecard-mob.png" alt="ultimatecard">
+					</picture>
+				</div>
 			</div>
-			<button class="blog__btn" type="button">Ще публікації</button>
+		</section>
+		<section class="blog main__blog">
+			<h2 class="visually-hidden">Публікації</h2>
+			<div class="container">
+				<a class="indicator" href="#">публікації
+					<svg class="indicator__arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.5 1.5L6 6L1.5 10.5" stroke-width="2"/>
+					</svg>
+				</a>
+				<h3 class="blog__title">Нам э що розказати</h3>
+				<div class="blog__box">
+					<article class="blog__item-outer">
+						<h4 class="visually-hidden"></h4>
+						<div class="blog__item">
+							<a class="blog__item-img blog__item-img-milenial" href="#">
+							</a>
+							<div class="blog__item-info">
+								<a class="blog__item-title" href="#">Заповіт міленіала</a>
+								<p class="blog__item-date">19 серпня</p>
+								<p class="blog__item-text blog__item-text-desktop">Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і криптомільйонери Типовий спадок українського покоління Х виглядає так: квартира у…</p>
+							</div>
+						</div>
+					</article>
+					<article class="blog__item-outer">
+						<h4 class="visually-hidden"></h4>
+						<div class="blog__item">
+							<a class="blog__item-img blog__item-img-associate" href="#">
+							</a>
+							<div class="blog__item-info">
+								<a class="blog__item-title" href="#">Equity associate</a>
+								<p class="blog__item-date">22 квітня</p>
+								<p class="blog__item-text blog__item-text-desktop">На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…</p>
+							</div>
+						</div>
+					</article>
+					<article class="blog__item-outer blog__item-outer-tablet">
+						<h4 class="visually-hidden"></h4>
+						<div class="blog__item">
+							<a class="blog__item-img blog__item-img-gdpr" href="#">
+							</a>
+							<div class="blog__item-info">
+								<a class="blog__item-title" href="#">Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR</a>
+								<p class="blog__item-date">29 вересня</p>
+								<p class="blog__item-text blog__item-text-desktop">І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua 21 січня Національна комісія із захисту даних.</p>
+							</div>
+						</div>
+					</article>
+					<article class="blog__item-outer blog__item-outer-tablet">
+						<h4 class="visually-hidden"></h4>
+						<div class="blog__item">
+							<a class="blog__item-img blog__item-img-language" href="#">
+							</a>
+							<div class="blog__item-info">
+								<a class="blog__item-title" href="#">Закон про мови: як зробити свій сайт відповідним</a>
+								<p class="blog__item-date">19 серпня</p>
+								<p class="blog__item-text blog__item-text-desktop">Наталія Кирик, керівник контент студії Wordfactory.ua По-перше, це красиво! Це аргумент номер один на користь україномовного сайту. По-друге, це ефективно. У…</p>
+							</div>
+						</div>
+					</article>
+					<article class="blog__item-outer blog__item-outer-desktop">
+						<h4 class="visually-hidden"></h4>
+						<div class="blog__item">
+							<a class="blog__item-img blog__item-img-child" href="#">
+							</a>
+							<div class="blog__item-info">
+								<a class="blog__item-title" href="#">Компенсація витрат на навчання дитини в дитячому садку та школі</a>
+								<p class="blog__item-date">5 Лютого 2018</p>
+								<p class="blog__item-text blog__item-text-desktop">Про що йде мова В червні цього року Верховна Рада внесла зміни до Податкового кодексу України. Відтепер батьки, які отримують офіційну…</p>
+							</div>
+						</div>
+					</article>
+					<article class="blog__item-outer blog__item-outer-desktop">
+						<h4 class="visually-hidden"></h4>
+						<div class="blog__item">
+							<a class="blog__item-img blog__item-img-child" href="#">
+							</a>
+							<div class="blog__item-info">
+								<a class="blog__item-title" href="#">Компенсація витрат на навчання дитини в дитячому садку та школі</a>
+								<p class="blog__item-date">5 Лютого 2018</p>
+								<p class="blog__item-text blog__item-text-desktop">Про що йде мова В червні цього року Верховна Рада внесла зміни до Податкового кодексу України. Відтепер батьки, які отримують офіційну…</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<button class="blog__btn btn" type="button">Ще публікації</button>
+			</div>
 		</section>
 	</main>
 	<footer class="footer">

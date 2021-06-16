@@ -1,0 +1,47 @@
+.main {
+    &__about {
+        margin-bottom: 45px;
+    }
+
+    &__background {
+        margin-bottom: 40px;
+    }
+
+    &__command {
+        margin-bottom: 30px;
+    }
+
+    &__case {
+        margin-bottom: 86px;
+    }
+
+    &__blog {
+        padding-top: 20px;
+        padding-bottom: 55px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main {
+        &__about {
+            margin-bottom: 80px;
+        }
+
+        &__background {
+            margin-bottom: 70px;
+        }
+
+        &__command {
+            margin-bottom: 95px;
+        }
+
+        &__case {
+            margin-bottom: 95px;
+        }
+
+        &__blog {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+}

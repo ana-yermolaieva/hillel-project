@@ -1,16 +1,10 @@
 .case {
-    padding-top: 40px;
-    &__item {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        color: $purple-light;
-        text-align: left;
+    background-color: $white;
+
+    &__link {
         background-color: $gray-bg;
-        padding: 20px 20px 60px;
         border-radius: 0;
-        border-bottom: 1px solid $white;
-        position: relative;
+        border: 1px solid $white;
 
         &:first-of-type {
             border-radius: 12px 12px 0 0;
@@ -18,73 +12,32 @@
 
         &:last-of-type {
             border-radius: 0 0 12px 12px;
-            border-bottom: none;
         }
 
         &:hover {
-            color: $purple-light;
             background-color: $gray-bg-alt; 
         }
     }
 
-    &__item-hillel::after {
-        content: "Hillel IT School";
-        display: block;
-        font-size: 18px;
-        line-height: 26px;
-        color: $gray-text;
-        position: absolute;
-        bottom: 20px;
+    &__item {
+        padding: 20px;
+        border-radius: inherit;
     }
 
-    &__item-wannabiz::after {
-        content: "WannaBiz";
-        display: block;
+    &__item-title {
+        font-weight: 500;
         font-size: 18px;
-        line-height: 26px;
-        color: $gray-text;
-        position: absolute;
-        bottom: 20px;
+        line-height: 21px;
+        color: $purple-light;
+        text-align: left;
+        margin-bottom: 10px;
     }
 
-    &__item-tapgerine::after {
-        content: "tapgerine";
-        display: block;
+    &__item-text {
         font-size: 18px;
         line-height: 26px;
         color: $gray-text;
-        position: absolute;
-        bottom: 20px;
-    }
-
-    &__item-3dlook::after {
-        content: "3dlook";
-        display: block;
-        font-size: 18px;
-        line-height: 26px;
-        color: $gray-text;
-        position: absolute;
-        bottom: 20px;
-    }
-
-    &__item-adtelligent::after {
-        content: "adtelligent";
-        display: block;
-        font-size: 18px;
-        line-height: 26px;
-        color: $gray-text;
-        position: absolute;
-        bottom: 20px;
-    }
-
-    &__item-clikky::after {
-        content: "clikky";
-        display: block;
-        font-size: 18px;
-        line-height: 26px;
-        color: $gray-text;
-        position: absolute;
-        bottom: 20px;
+        text-align: left;
     }
 }
 
@@ -92,7 +45,8 @@
     .case {
         display: flex;
         flex-wrap: wrap;
-        &__item {
+
+        &__link {
             width: 50%;
     
             &:first-of-type {
@@ -110,15 +64,15 @@
             &:last-of-type {
                 border-radius: 0 0 12px 0;
             }
+        }
 
-            &:nth-of-type(odd) {
-                border-right: 1px solid $white;
-            }
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
 
-            &:nth-of-type(5),
-            &:last-of-type {
-                border-bottom: none;
-            }
+        &__item-text {
+            margin-top: auto;
         }
     }
 }
@@ -127,9 +81,9 @@
     .case {
         display: flex;
         flex-wrap: wrap;
-        &__item {
-            width: 33.333%;
 
+        &__link {
+            width: 33.333%;
     
             &:first-of-type {
                 border-radius: 12px 0 0 0;
@@ -151,35 +105,22 @@
             &:nth-of-type(6) {
                 border-radius: 0 0 12px 0;
             }
-
-            &:nth-of-type(odd) {
-                border-right: none;
-            }
-
-            &:nth-of-type(1),
-            &:nth-of-type(2),
-            &:nth-of-type(4),
-            &:nth-of-type(5) {
-                border-right: 1px solid $white;
-            }
-
-            &:nth-of-type(4) {
-                border-bottom: none;
-            }
         }
     }
 }
 
 @media (min-width: 992px) {
     .case {
-        &__item {
+
+        &__item-title {
             font-size: 24px;
             line-height: 28px;
-            
-            &::after {
-                font-size: 18px;
-                line-height: 26px;
-            }
+            margin-bottom: 17px;
+        }
+
+        &__item-text {
+            font-size: 18px;
+            line-height: 26px;
         }
     }
 }
@@ -187,23 +128,7 @@
 @media (min-width: 1100px) {
     .case {
         &__item {
-            padding-right: 40px;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .case {
-        &__item {
-            padding-right: 60px;
-        }
-    }
-}
-
-@media (min-width: 1300px) {
-    .case {
-        &__item {
-            padding-right: 80px;
+            max-width: 325px;
         }
     }
 }

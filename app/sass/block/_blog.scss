@@ -1,0 +1,151 @@
+.blog {
+    background-color: $gray-bg;
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: $red;
+        padding-bottom: 30px;
+    }
+
+    &__item-outer {
+        margin-bottom: 28px;
+    }
+
+    &__item-outer-tablet,
+    &__item-outer-desktop,
+    &__item-text-desktop {
+        display: none;
+    }
+
+    &__item {
+        border-radius: 8px;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__item-img {
+        height: 189px;
+        width: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+    &__item-img-milenial {
+        background-image: url(../img/blog-img-milenial-mob.jpg);
+    }
+
+    &__item-img-associate {
+        background-image: url(../img/blog-img-associate-mob.jpg);
+    }
+
+    &__item-info {
+        margin: 20px;
+    }
+
+    &__item-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    &__item-date {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $gray-text;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 22px;
+        color: $black;
+        padding-top: 20px;
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+        background-color: $blue-link;
+        border-radius: 12px; 
+        box-shadow: 0px 0px 20px $blue-btn-shadow;
+        display: flex;
+        margin: 10px auto 0;
+        padding: 16px 78px;
+
+        &:hover {
+            background-color: $blue-link-hover;
+        }
+
+        &:active {
+            background-color: $blue-link-active;
+            box-shadow: none;
+        }
+    }
+}
+
+@media (min-width: 651px) {
+    .blog {
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+        }
+
+        &__item-outer {
+            width: 50%;
+            padding: 0 20px;
+            margin-bottom: 40px;
+        }
+
+        &__item-outer-tablet,
+        &__item-text-desktop {
+            display: block;
+        }
+
+        &__item {
+            height: 100%;
+            align-items: center;
+        }
+
+        &__item-img-gdpr {
+            background-image: url(../img/blog-img-gdpr.jpg);
+        }
+    
+        &__item-img-language {
+            background-image: url(../img/blog-img-language.jpg);
+        }
+
+        &__item-date {
+            padding-bottom: 20px;
+            border-bottom: 4px solid $gray-medium;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .blog {
+        &__item-outer {
+            width: 33.333%;
+        }
+
+        &__item-outer-desktop {
+            display: block;
+        }
+
+        &__item-img-child {
+            background-image: url(../img/blog-img-child.jpg);
+        }
+    }
+}
