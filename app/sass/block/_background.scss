@@ -9,6 +9,15 @@
         border-radius: 0px 0px 12px 12px;
     }
 
+    &--service {
+        background-color: $gradient-supersoft;
+        background-image: url(../img/service-bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        border-radius: 0px 0px 12px 12px;
+    }
+
     &::after,
     &::before {
         content: "";
@@ -31,5 +40,30 @@
         bottom: -10px;
         left: 20px;
         background-color: $gradient-shadow-middle;
+    }
+
+    &__index {
+        padding-top: 27px;
+        padding-bottom: 100px;
+    }
+
+    &__service {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .background {
+
+        &__index {
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
+
+        &__service {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
 }

@@ -4,17 +4,6 @@
         &:hover {
             opacity: 0.5;
         }
-
-        &::after {
-            content: "";
-            display: none;
-            width: 11px;
-            height: 24px;
-            background-image: url(../img/header-menu-slash-mob.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            padding-left: 2px;
-        }
     }
 
     &__img {
@@ -23,13 +12,23 @@
     }
 
     &__page {
-        display: none;
         font-size: 19px;
         line-height: 22px;
         color: $white;
 
         &--light {
             color: $purple;
+        }
+
+        &::before {
+            content: "";
+            display: inline-flex;
+            width: 11px;
+            height: 24px;
+            background-image: url(../img/header-menu-slash-mob.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-left: 2px;
         }
 
         &::after {
@@ -43,6 +42,11 @@
             padding-left: 2px;
         }
     }
+
+    &__page-index {
+        display: none;
+    }
+
 }
 
 @media (min-width: 768px) {

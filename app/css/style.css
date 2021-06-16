@@ -86,6 +86,15 @@ a:hover {
   border-radius: 0px 0px 12px 12px;
 }
 
+.background--service {
+  background-color: linear-gradient(228deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background-image: url(../img/service-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border-radius: 0px 0px 12px 12px;
+}
+
 .background::after, .background::before {
   content: "";
   display: block;
@@ -109,6 +118,27 @@ a:hover {
   background-color: #cacadb;
 }
 
+.background__index {
+  padding-top: 27px;
+  padding-bottom: 100px;
+}
+
+.background__service {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .background__index {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .background__service {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .btn {
   border: none;
   cursor: pointer;
@@ -126,24 +156,12 @@ a:hover {
   opacity: 0.5;
 }
 
-.logo-box__logo::after {
-  content: "";
-  display: none;
-  width: 11px;
-  height: 24px;
-  background-image: url(../img/header-menu-slash-mob.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-left: 2px;
-}
-
 .logo-box__img {
   width: 78px;
   height: 31px;
 }
 
 .logo-box__page {
-  display: none;
   font-size: 19px;
   line-height: 22px;
   color: #ffffff;
@@ -151,6 +169,19 @@ a:hover {
 
 .logo-box__page--light {
   color: #323264;
+}
+
+.logo-box__page::before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 11px;
+  height: 24px;
+  background-image: url(../img/header-menu-slash-mob.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 2px;
 }
 
 .logo-box__page::after {
@@ -164,6 +195,10 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   padding-left: 2px;
+}
+
+.logo-box__page-index {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -193,8 +228,6 @@ a:hover {
   grid-template-columns: 80% 20%;
   grid-template-rows: auto auto;
   grid-row-gap: 20px;
-  padding-top: 27px;
-  padding-bottom: 100px;
 }
 
 .header__top-box {
@@ -435,7 +468,7 @@ a:hover {
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
   }
-  .header__menu-link:hover {
+  .header__menu-link:hover, .header__menu-link--current {
     color: #ffffff;
     border-bottom: 2px solid #ffffff;
   }
@@ -531,6 +564,16 @@ a:hover {
     padding-top: 180px;
     padding-bottom: 290px;
   }
+}
+
+.header-content-services__item-icon {
+  width: 92px;
+  height: 92px;
+}
+
+.header-content-services__icon {
+  width: 64px;
+  height: 64px;
 }
 
 .main__about {
@@ -757,6 +800,7 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .services__title {
@@ -793,38 +837,20 @@ a:hover {
   height: 64px;
   background-color: #ffffff;
   border-radius: 18px;
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.services__item-icon-bag, .services__item-icon-case, .services__item-icon-corporate, .services__item-icon-contract, .services__item-icon-security, .services__item-icon-trial {
+.services__icon {
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.services__item-icon-bag {
-  background-image: url(../img/service-item-icon-bag.svg);
-}
-
-.services__item-icon-case {
-  background-image: url(../img/service-item-icon-case.svg);
-}
-
-.services__item-icon-corporate {
-  background-image: url(../img/service-item-icon-corporate.svg);
-}
-
-.services__item-icon-contract {
-  background-image: url(../img/service-item-icon-contract.svg);
-}
-
-.services__item-icon-security {
-  background-image: url(../img/service-item-icon-security.svg);
-}
-
-.services__item-icon-trial {
-  background-image: url(../img/service-item-icon-trial.svg);
 }
 
 .services__item-title {
@@ -907,11 +933,27 @@ a:hover {
     margin-bottom: 15px;
   }
   .services__item-icon {
+    width: 92px;
+    height: 92px;
     margin-bottom: 20px;
+  }
+  .services__icon {
+    width: 64px;
+    height: 64px;
   }
   .services__item-title {
     padding-left: 0;
   }
+}
+
+.header-content-services__item-icon {
+  width: 92px;
+  height: 92px;
+}
+
+.header-content-services__icon {
+  width: 64px;
+  height: 64px;
 }
 
 .command {

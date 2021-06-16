@@ -2,6 +2,7 @@
     &__box {
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 20px;
     }
 
     &__title {
@@ -31,44 +32,51 @@
         height: 64px;
         background-color: $white;
         border-radius: 18px;
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    &__item-icon-bag,
-    &__item-icon-case,
-    &__item-icon-corporate,
-    &__item-icon-contract,
-    &__item-icon-security,
-    &__item-icon-trial {
+    &__icon {
         width: 44px;
         height: 44px;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
-    &__item-icon-bag {
-        background-image: url(../img/service-item-icon-bag.svg);
-    }
+    // &__item-icon-bag,
+    // &__item-icon-case,
+    // &__item-icon-corporate,
+    // &__item-icon-contract,
+    // &__item-icon-security,
+    // &__item-icon-trial {
+    //     width: 44px;
+    //     height: 44px;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 
-    &__item-icon-case {
-        background-image: url(../img/service-item-icon-case.svg);
-    }
+    // &__item-icon-bag {
+    //     background-image: url(../img/service-item-icon-bag.svg);
+    // }
 
-    &__item-icon-corporate {
-        background-image: url(../img/service-item-icon-corporate.svg);
-    }
+    // &__item-icon-case {
+    //     background-image: url(../img/service-item-icon-case.svg);
+    // }
 
-    &__item-icon-contract {
-        background-image: url(../img/service-item-icon-contract.svg);
-    }
+    // &__item-icon-corporate {
+    //     background-image: url(../img/service-item-icon-corporate.svg);
+    // }
 
-    &__item-icon-security {
-        background-image: url(../img/service-item-icon-security.svg);
-    }
+    // &__item-icon-contract {
+    //     background-image: url(../img/service-item-icon-contract.svg);
+    // }
 
-    &__item-icon-trial {
-        background-image: url(../img/service-item-icon-trial.svg);
-    }
+    // &__item-icon-security {
+    //     background-image: url(../img/service-item-icon-security.svg);
+    // }
+
+    // &__item-icon-trial {
+    //     background-image: url(../img/service-item-icon-trial.svg);
+    // }
 
     &__item-title {
         font-size: 18px;
@@ -158,8 +166,25 @@
         }
 
         &__item-icon {
+            width: 92px;
+            height: 92px;
             margin-bottom: 20px;
         }
+
+        &__icon {
+            width: 64px;
+            height: 64px;
+        }
+
+        // &__item-icon-bag,
+        // &__item-icon-case,
+        // &__item-icon-corporate,
+        // &__item-icon-contract,
+        // &__item-icon-security,
+        // &__item-icon-trial {
+        //     width: 64px;
+        //     height: 64px;
+        // }
 
         &__item-title {
             padding-left: 0;
