@@ -27,21 +27,15 @@
         align-items: flex-start;
     }
 
-    &__item-img {
-        height: 189px;
-        width: 100%;
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
+    &__item-link {
         border-radius: 8px 8px 0 0;
+        align-self: center;
     }
 
-    &__item-img-milenial {
-        background-image: url(../img/blog-img-milenial-mob.jpg);
-    }
-
-    &__item-img-associate {
-        background-image: url(../img/blog-img-associate-mob.jpg);
+    &__item-img {
+        border-radius: 8px 8px 0 0;
+        text-align: center;
+        display: block;
     }
 
     &__item-info {
@@ -95,6 +89,14 @@
     }
 }
 
+@media (min-width: 481px) {
+    .blog {
+        &__item-img {
+            max-width: 100%;
+        }
+    }
+}
+
 @media (min-width: 651px) {
     .blog {
         &__box {
@@ -119,14 +121,6 @@
             align-items: center;
         }
 
-        &__item-img-gdpr {
-            background-image: url(../img/blog-img-gdpr.jpg);
-        }
-    
-        &__item-img-language {
-            background-image: url(../img/blog-img-language.jpg);
-        }
-
         &__item-date {
             padding-bottom: 20px;
             border-bottom: 4px solid $gray-medium;
@@ -142,10 +136,6 @@
 
         &__item-outer-desktop {
             display: block;
-        }
-
-        &__item-img-child {
-            background-image: url(../img/blog-img-child.jpg);
         }
     }
 }
