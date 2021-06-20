@@ -24,10 +24,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        &:hover {
-            opacity: 0.7;
-        }
     }
 
     &__item-hillel {
@@ -112,6 +108,10 @@
     .customers {
         &__item {
             width: 33.333%;
+            
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }

@@ -15,36 +15,38 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
-        border-radius: 0px 0px 12px 12px;
     }
 
-    &::after,
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: calc(100% - 80px);
-        height: 20px;
-        bottom: -20px;
-        left: 40px;
-        border-radius: 0 0 12px 12px;
-    }
+    &--shadow {
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: calc(100% - 80px);
+            height: 20px;
+            bottom: -20px;
+            left: 40px;
+            border-radius: 0 0 12px 12px;
+        }
 
-    &::before {
-        background-color: $gradient-shadow-light;
-    }
+        &::before {
+            background-color: $gradient-shadow-light;
+        }
 
-    &::after {
-        width: calc(100% - 40px);
-        height: 10px;
-        bottom: -10px;
-        left: 20px;
-        background-color: $gradient-shadow-middle;
+        &::after {
+            width: calc(100% - 40px);
+            height: 10px;
+            bottom: -10px;
+            left: 20px;
+            background-color: $gradient-shadow-middle;
+        }
     }
+    
 
     &__index {
-        padding-top: 27px;
-        padding-bottom: 100px;
+        padding-top: 20px;
+        padding-bottom: 104px;
     }
 
     &__service {

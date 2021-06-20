@@ -12,7 +12,7 @@
     }
 
     &__slider-item {
-        padding-bottom: 10px;
+        padding-bottom: 19px;
     }
 
     &__slider-name {
@@ -36,6 +36,7 @@
         font-size: 18px;
         line-height: 26px;
         color: $white;
+        padding-right: 5px;
     }
 }
 
@@ -71,6 +72,7 @@
         &__slider-title,
         &__slider-text {
             width: 500px;
+            padding-top: 5px;
         }
 
         &__slider-item-btn {
@@ -102,8 +104,13 @@
             }
         }
 
+        &__slider-item-btn:not(:last-child) {
+            padding-bottom: 21px;
+        }
+
         &__slider-item {
             padding-left: 40px;
+            padding-bottom: 0px;
         }
 
         &__slider-btn-list,
@@ -128,7 +135,7 @@
         }
 
         &__slider-item-btn {
-            font-size: 42px;
+            font-size: 41px;
         }
     }
 }

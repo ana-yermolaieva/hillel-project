@@ -33,6 +33,7 @@
         background-color: $white;
         border-radius: 18px;
         display: flex;
+        flex-shrink: 0;
         align-items: center;
         justify-content: center;
     }
@@ -42,48 +43,17 @@
         height: 44px;
     }
 
-    // &__item-icon-bag,
-    // &__item-icon-case,
-    // &__item-icon-corporate,
-    // &__item-icon-contract,
-    // &__item-icon-security,
-    // &__item-icon-trial {
-    //     width: 44px;
-    //     height: 44px;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    // }
-
-    // &__item-icon-bag {
-    //     background-image: url(../img/service-item-icon-bag.svg);
-    // }
-
-    // &__item-icon-case {
-    //     background-image: url(../img/service-item-icon-case.svg);
-    // }
-
-    // &__item-icon-corporate {
-    //     background-image: url(../img/service-item-icon-corporate.svg);
-    // }
-
-    // &__item-icon-contract {
-    //     background-image: url(../img/service-item-icon-contract.svg);
-    // }
-
-    // &__item-icon-security {
-    //     background-image: url(../img/service-item-icon-security.svg);
-    // }
-
-    // &__item-icon-trial {
-    //     background-image: url(../img/service-item-icon-trial.svg);
-    // }
-
     &__item-title {
         font-size: 18px;
         line-height: 21px;
+        letter-spacing: 0.2px;
         text-align: left;
         align-self: center;
         padding-left: 10px;
+
+        &:hover {
+            color: $blue-link;
+        }
     }
 
     &__item-text {
@@ -120,6 +90,10 @@
 
         &__item-title {
             max-width: 280px;
+ 
+            &:hover {
+                color: $red;
+            }
         }
 
         &__item-text {
@@ -148,7 +122,8 @@
 @media (min-width: 992px) {
     .services {
         &__title {
-            margin-bottom: 10px;
+            margin: 7px 0 12px;
+            font-size: 43px;
         }
 
         &__box {
@@ -175,16 +150,6 @@
             width: 64px;
             height: 64px;
         }
-
-        // &__item-icon-bag,
-        // &__item-icon-case,
-        // &__item-icon-corporate,
-        // &__item-icon-contract,
-        // &__item-icon-security,
-        // &__item-icon-trial {
-        //     width: 64px;
-        //     height: 64px;
-        // }
 
         &__item-title {
             padding-left: 0;

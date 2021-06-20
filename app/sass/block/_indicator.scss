@@ -5,13 +5,25 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     
-    &:hover .indicator__arrow {
-        stroke: $red;
+    &:hover {
+        color: $blue-link;
     }
 
     &__arrow {
         margin-left: 5px;
-        margin-top: 4px;
+        margin-top: 3px;
         stroke: $blue-link;
+    }
+}
+
+@media (min-width: 768px) {
+    .indicator {
+        &:hover {
+            color: $red;
+        }
+
+        &:hover .indicator__arrow {
+            stroke: $red;
+        }
     }
 }

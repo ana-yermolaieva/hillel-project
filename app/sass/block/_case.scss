@@ -13,14 +13,10 @@
         &:last-of-type {
             border-radius: 0 0 12px 12px;
         }
-
-        &:hover {
-            background-color: $gray-bg-alt; 
-        }
     }
 
     &__item {
-        padding: 20px;
+        padding: 18px 20px 20px;
         border-radius: inherit;
     }
 
@@ -104,6 +100,10 @@
 
             &:nth-of-type(6) {
                 border-radius: 0 0 12px 0;
+            }
+
+            &:hover {
+                background-color: $gray-bg-alt; 
             }
         }
     }

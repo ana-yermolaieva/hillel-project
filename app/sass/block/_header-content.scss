@@ -36,6 +36,30 @@
     }
 }
 
+@media (min-width: 768px) {
+    .header-content {
+        &__btn {
+            animation-name: content;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-timing-function: linear;
+            
+            @keyframes content {
+                from {
+                    transform: translate(0, -250px);
+                    background-color: $red;
+                }
+    
+                to {
+                    transform: translate(0, -10px);
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .header-content {
         background: url(../img/header-symbol-p.svg) bottom,

@@ -48,6 +48,10 @@
         line-height: 21px;
         text-align: left;
         margin-bottom: 10px;
+
+        &:hover {
+            color: $blue-link;
+        }
     }
 
     &__item-date {
@@ -63,6 +67,7 @@
         font-size: 16px;
         line-height: 22px;
         color: $black;
+        padding-right: 5px;
         padding-top: 20px;
     }
 
@@ -75,17 +80,8 @@
         border-radius: 12px; 
         box-shadow: 0px 0px 20px $blue-btn-shadow;
         display: flex;
-        margin: 10px auto 0;
-        padding: 16px 78px;
-
-        &:hover {
-            background-color: $blue-link-hover;
-        }
-
-        &:active {
-            background-color: $blue-link-active;
-            box-shadow: none;
-        }
+        margin: 31px auto 0;
+        padding: 18px 78px 15px;
     }
 }
 
@@ -121,9 +117,44 @@
             align-items: center;
         }
 
+        &__item-title:hover {
+            color: $red;
+        }
+
         &__item-date {
             padding-bottom: 20px;
             border-bottom: 4px solid $gray-medium;
+        }
+        
+        &__item-link {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        
+        &__btn {
+            margin-top: 10px;
+            animation-name: blog;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 10;
+            animation-timing-function: ease-out;
+    
+            @keyframes blog {
+                100% {
+                    background-color: $red;
+                }
+            }
+    
+            &:hover {
+                background-color: $blue-link-hover;
+                animation-play-state: paused;
+            }
+    
+            &:active {
+                background-color: $blue-link-active;
+                box-shadow: none;
+            }
         }
     }
 }
@@ -136,6 +167,15 @@
 
         &__item-outer-desktop {
             display: block;
+        }
+
+        &__item-info {
+            margin-bottom: 13px;
+        }
+
+        &__title {
+            font-size: 43px;
+            padding: 8px 0 44px;
         }
     }
 }

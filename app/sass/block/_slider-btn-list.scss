@@ -10,10 +10,6 @@
         border-radius: 50%;
         background-color: $blue-pg-simple;
 
-        &:hover {
-            background-color: $blue-pg-hover;
-        }
-
         &--current {
             background-color: $blue-link;
         }
@@ -21,5 +17,15 @@
 
     &__item:not(:last-child) {
         margin-right: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slider-btn-list {
+        &__btn {
+            &:hover {
+                background-color: $blue-pg-hover;
+            }
+        }
     }
 }

@@ -2,7 +2,7 @@
     background-color: $gray-bg;
 
     &__separator {
-        padding-top: 30px;
+        padding-top: 18px;
         border-top:  4px solid $gray-medium;
         display: grid;
         grid-template-columns: 1fr;
@@ -28,7 +28,6 @@
         grid-row: 3 / 4;
     }
 
-
     &__address-box,
     &__contact {
         display: flex;
@@ -40,6 +39,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
+        letter-spacing: 0.2px;
         text-align: center;
         color: $purple;
         margin-bottom: 10px;
@@ -53,6 +53,10 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $blue-link;
+
+        &:hover {
+            color: $blue-link;
+        }
     }
 
     &__contact-fb {
@@ -63,19 +67,20 @@
         width: 38px;
         height: 38px;
         fill: $blue-link;
-
-        &:hover {
-            fill: $red;
-        }
     }
 
     &__contact-tel {
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
+        letter-spacing: 0.8px;
         text-align: center;
         color: $purple-medium;
         margin-bottom: 20px;
+
+        &:hover {
+            color: $purple-medium;
+        }
     }
 
     &__contact-mail {
@@ -84,12 +89,17 @@
         line-height: 19px;
         text-align: center;
         color: $blue-link;
+
+        &:hover {
+            color: $blue-link;
+        }
     }
 
     &__copyright {
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
+        letter-spacing: 0.2px;
         text-align: center;
         color: $gray-text;
         margin-bottom: 120px;
@@ -142,12 +152,29 @@
             margin-top: 17px;
         }
 
+        &__contact-tel:hover {
+            color: $red;
+        }
         &__contact-tel::after {
             margin-top: 7px;
         }
 
+        &__contact-mail:hover {
+            color: $red;
+        }
+
         &__copyright {
             margin-bottom: 80px;
+        }
+
+        &__fb-icon {
+            &:hover {
+                fill: $red;
+            }
+        }
+
+        &__address-link:hover {
+            color: $red;
         }
     }
 }
