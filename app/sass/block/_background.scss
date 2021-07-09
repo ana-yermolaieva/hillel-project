@@ -10,7 +10,7 @@
     }
 
     &--service {
-        background-color: $gradient-supersoft;
+        background: $gradient-supersoft;
         background-image: url(../img/service-bg-mobile.jpg);
         background-repeat: no-repeat;
         background-position: top center;
@@ -42,7 +42,6 @@
             background-color: $gradient-shadow-middle;
         }
     }
-    
 
     &__index {
         padding-top: 20px;
@@ -53,17 +52,45 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
+    &__modal {
+        padding-top: 15px;
+        padding-bottom: 85px;
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .background {
+        &--service {
+            background-image: url(../img/service-bg-mobile@2x.jpg);
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .background {
+        &--service {
+            background-image: url(../img/service-bg.jpg);
+        }
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .background {
+            &--service {
+                background-image: url(../img/service-bg@2x.jpg);
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
     .background {
-
         &__index {
             padding-top: 50px;
             padding-bottom: 60px;
         }
 
-        &__service {
+        &__modal {
             padding-top: 20px;
             padding-bottom: 20px;
         }

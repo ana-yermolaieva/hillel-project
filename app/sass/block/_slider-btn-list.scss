@@ -25,6 +25,7 @@
         &__btn {
             &:hover {
                 background-color: $blue-pg-hover;
+                transition-duration: 0.3s;
             }
         }
     }

@@ -11,8 +11,16 @@
         line-height: 22px;
         color: $white;
 
+        &:hover {
+            color: $white;
+        }
+
         &--light {
             color: $purple;
+
+            &:hover {
+                color: $purple;
+            }
         }
 
         &::before,
@@ -39,7 +47,6 @@
     &__bread-crumbs-index {
         display: none;
     }
-
 }
 
 @media (min-width: 768px) {
@@ -70,6 +77,10 @@
                 width: 42px;
                 height: 47px;
                 background-image: url(../img/header-menu-symbol.svg);
+            }
+
+            &:hover {
+                transition-duration: 0.5s;
             }
         }
     }

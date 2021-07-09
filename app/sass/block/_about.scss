@@ -87,6 +87,7 @@
             &:hover,
             &--current {
                 color: $red;
+                transition-duration: 0.3s;
             }
 
             &--current::after {

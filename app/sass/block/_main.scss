@@ -19,6 +19,16 @@
         padding-top: 20px;
         padding-bottom: 41px;
     }
+
+    &__service-list {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__service-case {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -42,6 +52,14 @@
         &__blog {
             padding-top: 40px;
             padding-bottom: 55px;
+        }
+
+        &__service-list {
+            padding-bottom: 80px;
+        }
+
+        &__service-case {
+            padding-top: 60px;
         }
     }
 }

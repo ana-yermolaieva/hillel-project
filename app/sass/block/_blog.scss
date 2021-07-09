@@ -31,9 +31,12 @@
     &__item-link {
         border-radius: 8px 8px 0 0;
         align-self: center;
+        width: 100%;
+        display: block;
     }
 
     &__item-img {
+        width: 100%;
         border-radius: 8px 8px 0 0;
         text-align: center;
         display: block;
@@ -52,6 +55,7 @@
 
         &:hover {
             color: $blue-link;
+            transition-duration: 0.3s;
         }
     }
 
@@ -86,14 +90,6 @@
     }
 }
 
-@media (min-width: 481px) {
-    .blog {
-        &__item-img {
-            max-width: 100%;
-        }
-    }
-}
-
 @media (min-width: 651px) {
     .blog {
         &__box {
@@ -120,6 +116,7 @@
 
         &__item-title:hover {
             color: $red;
+            transition-duration: 0.3s;
         }
 
         &__item-date {
@@ -130,6 +127,7 @@
         &__item-link {
             &:hover {
                 opacity: 0.5;
+                transition-duration: 0.3s;
             }
         }
         
@@ -150,6 +148,7 @@
             &:hover {
                 background-color: $blue-link-hover;
                 animation-play-state: paused;
+                transition-duration: 0.3s;
             }
     
             &:active {

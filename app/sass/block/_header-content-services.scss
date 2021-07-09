@@ -33,15 +33,91 @@
     }
 
     &__btn {
+        text-align: center;
+    }
+
+    &__btn-link {
         font-size: 14px;
         line-height: 17px;
-        text-align: center;
         color: $white;
         box-shadow: 0px 0px 20px $blue-btn-shadow;
         background-color: $blue-link;
         border-radius: 12px;
         padding: 17px 39px 16px;
-        display: flex;
         margin: 10px auto 0;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header-content-services {
+        &__btn-link {
+            animation-name: consult;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+    
+            @keyframes consult {
+                100% {
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header-content-services {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item-title,
+        &__item-text {
+            max-width: 860px;
+        }
+        
+        &__item-title {
+            font-size: 42px;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+        &__item-text {
+            font-size: 21px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        &__btn {
+            animation-name: consultation;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+    
+            @keyframes consultation {
+                100% {
+                    background-color: $red;
+                }
+            }
+    
+            &:hover {
+                background-color: $blue-link-hover;
+                animation-play-state: paused;
+                transition-duration: 0.3s;
+            }
+    
+            &:active {
+                background-color: $blue-link-active;
+                box-shadow: none;
+            }
+        }
     }
 }

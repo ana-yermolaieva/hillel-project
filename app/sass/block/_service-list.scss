@@ -1,0 +1,40 @@
+.service-list {
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        color: $white;
+        padding-bottom: 10px;
+    }
+
+    &__list-style {
+        color: $red;
+        padding-bottom: 15px;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .service-list {
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+            padding-bottom: 20px;
+        }
+        
+        &__list {
+            column-count: 2;
+            column-gap: 55px;
+        }
+
+        &__item {
+            max-width: 480px;
+            letter-spacing: 0.9px;
+        }
+    }
+}

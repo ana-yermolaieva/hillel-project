@@ -1,0 +1,148 @@
+.modal {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: $gray-bg;
+
+    &__main-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: $red;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $gray-text;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    &__list-item {
+        margin-bottom: 20px;
+    }
+
+    &__input,
+    &__input:focus {
+        width: 100%;
+        padding: 18px 10px 14px;
+        background: $white;
+        border: 2px solid transparent;
+        border-radius: 8px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 18px 10px 14px;
+        background: $white;
+        border: 2px solid transparent;
+        border-radius: 8px;
+
+        &::placeholder {
+            font-size: 18px;
+            line-height: 26px;
+            color: $gray-text;
+        }
+
+        &:invalid {
+            border-color: $red;
+        }
+
+        &--textarea {
+            font-family: "tt_normsregular", "Arial", sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+            color: $black;
+            height: 160px;
+            padding-top: 15px;
+        }
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+        background-color: $blue-link;
+        border-radius: 12px; 
+        box-shadow: 0px 0px 20px $blue-btn-shadow;
+        display: flex;
+        margin: 31px auto 0;
+        padding: 18px 68px 15px;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/close-btn.svg);
+    }
+} 
+
+@media (min-width: 527px) {
+    .modal {
+        width: 527px;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        filter: drop-shadow(0px 15px 80px $purple-shadow);
+        border-radius: 12px;
+        
+        &__main-title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        &__close-btn {
+            top: 15px;
+            right: 15px;
+        }
+    } 
+}
+
+@media (min-width: 768px) {
+    .modal {
+        top: 100px;
+
+        &__btn {
+            animation-name: send;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+    
+            @keyframes send {
+                100% {
+                    background-color: $red;
+                }
+            }
+        }
+    } 
+}
+
+@media (min-width: 992px) {
+    .modal {
+        top: 150px;
+    } 
+}
+
+@media (min-width: 1201px) {
+    .modal {
+        top: 197px;
+    } 
+}

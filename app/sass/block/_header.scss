@@ -63,12 +63,21 @@
     }
 
     &__menu-btn {
-        width: 20px;
+        width: 26px;
         height: 32px;
-        background-image: url(../img/header-menu-hamburger.svg);
-        background-repeat: no-repeat;
-        background-position: center;
         opacity: 0.5;
+
+        &--light {
+            opacity: 1;
+        }
+    }
+
+    &__menu-btn-gam {
+        stroke: $white;
+
+        &--light {
+            stroke: $purple;
+        }
     }
 
     &__menu-list-mobile {
@@ -152,16 +161,25 @@
         &__contact-address {
             font-size: 16px;
             line-height: 19px;
-            color: $gray-text;
+            color: $white;
             margin-right: 13px;
+
+            &--light {
+                color: $gray-text;
+            }
         }
 
         &__contact-tel {
             margin-right: 13px;
             letter-spacing: 0;
+            color: $white;
 
             &:hover {
                 color: $red;
+            }
+
+            &--light {
+                color: $gray-text;
             }
         }
 
@@ -176,6 +194,12 @@
             background-position: center;
             margin-left: 13px;
             margin-top: 7px;
+            opacity: 0.5;
+        }
+
+        &__contact-address--light::after,
+        &__contact-tel--light::after {
+            opacity: 1;
         }
 
         &__logo {
@@ -202,6 +226,11 @@
 
             &:hover {
                 fill: $white;
+                transition-duration: 0.3s;
+            }
+
+            &--light:hover {
+                fill: $blue-link;
             }
         }
 
@@ -239,13 +268,28 @@
             padding: 0 0 2px;
             display: inline-flex;
 
-            &--light {
-                color: $blue-link;
-            }
-
             &--current {
                 color: $white;
                 border-bottom: 2px solid $white;
+            }
+
+            &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+            }
+
+            &--light {
+                color: $blue-link;
+
+                &:hover {
+                    color: $red;
+                    border-bottom: none;
+                }
+            } 
+
+            &--light-current {
+                color: $red;
+                border-bottom: 2px solid $red;
             }
 
             &:last-of-type {
@@ -257,6 +301,11 @@
             &:hover {
                 color: $white;
                 background-color: $gray-lang-bg-50;
+                transition-duration: 0.3s;
+            }
+
+            &--light:hover {
+                color: $gray-text;
             }
     
             &--current {
@@ -273,20 +322,6 @@
                 }
             }
         }
-
-        &__menu-link {
-            &--light {
-                &:hover {
-                    color: $red;
-                    border-bottom: 2px solid $red;
-                }
-            }
-
-            &:hover {
-                color: $white;
-                border-bottom: 2px solid $white;
-            }
-        } 
     }
 }
 
@@ -302,12 +337,6 @@
             grid-column: 2 / 3;
             grid-row: 1 / 2;
             justify-content: flex-end;
-        }
-
-        &__lang,
-        &__contact-address,
-        &__contact-tel {
-            color: $white;
         }
 
         &__lang {

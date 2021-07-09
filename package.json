@@ -12,7 +12,7 @@
   ],
   "homepage": "",
   "devDependencies": {
-    "browser-sync": "^2.26.10",
+    "browser-sync": "^2.27.4",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
@@ -20,11 +20,13 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^4.14.1"
+    "gulp-sass": "^4.1.1",
+    "node-sass": "^4.14.1",
+    "optipng-bin": "^3.1.4"
   },
   "dependencies": {
     "autoprefixer": "^10.2.5",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.2.8"

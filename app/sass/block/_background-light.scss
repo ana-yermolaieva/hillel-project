@@ -1,0 +1,27 @@
+.background-light {
+    background-color: $white;
+
+    &__about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__about-main {
+        padding-bottom: 35px;
+    }
+
+    &__about-team {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .background-light {
+        &__about-main {
+            max-width: 1095px;
+            margin: auto;
+            padding-bottom: 80px;
+        }
+    }
+}

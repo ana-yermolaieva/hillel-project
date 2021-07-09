@@ -14,7 +14,7 @@
 	<link rel="preload" href="fonts/ttnorms-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/ttnorms-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-	<title>hlegals</title>
+	<title>hlegals-service</title>
 </head>
 <body>
 	<div class="background background--service">
@@ -23,7 +23,7 @@
 				<a class="logo-box__logo" href="index.html">
 					<img class="logo-box__img" src="img/logo-hlegals-dark.svg" alt="logo" aria-label="посилання на головну сторінку">
 				</a>
-				<a class="logo-box__bread-crumbs" href="#">послуги</a>
+				<a class="logo-box__bread-crumbs" href="service-page.html">послуги</a>
 			</div>
 			<div class="header__top-box">
 				<div class="header__lang-box">
@@ -45,7 +45,7 @@
 			<div class="header__menu">
 				<button class="header__menu-btn btn" type="button" aria-label="меню сайту"></button>
 				<div class="header__menu-list header__menu-list-mobile">
-					<button class="header__menu-btn-close header__menu-btn-close--active btn" type="button"aria-label="закрити меню сайту"></button>
+					<button class="header__menu-btn-close header__menu-btn-close--active btn" type="button" aria-label="закрити меню сайту"></button>
 					<a class="header__menu-link header__menu-link-mobile" href="about-page.html">о нас</a>
 					<a class="header__menu-link header__menu-link-mobile header__menu-link--current" href="service-page.html">послуги</a>
 					<a class="header__menu-link header__menu-link-mobile" href="command-page.html">команда</a>
@@ -73,26 +73,94 @@
 						</defs>
 					</svg>		
                 </div>
-                <h1 class="header-content-services__item-title" href="#" aria-label="посилання на сторінку послуги">IT та електронна комерція</h1>
+                <h1 class="header-content-services__item-title">IT та електронна комерція</h1>
                 <p class="header-content-services__item-text">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.</p>
 				<p class="header-content-services__item-text">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
-				<button class="header-content-services__btn btn" type="button" aria-label="замовлення безкоштовної консультації">Безкоштовна консультація</button>
+				<div class="header-content-services__btn">
+					<a class="header-content-services__btn-link" href="#" aria-label="замовлення безкоштовної консультації">Безкоштовна консультація</a>
+				</div>
 			</div>
 		</div>
+		<div class="modal container background__modal">
+			<p class="modal__main-title">Ми хотіли б Вам допомогти</p>
+			<form action="https://fom.in.ua/echo" method="POST">
+				<ul class="modal__list">
+					<li class="modal__list-item">
+						<input class="modal__input" type="text" name="name" placeholder="Iм’я" required>
+					</li>
+					<li class="modal__list-item">
+						<textarea class="modal__input modal__input--textarea" name="message" placeholder="Повідомлення" required></textarea>
+					</li>
+				</ul>
+				<p class="modal__title">Як вам відповісти?</p>
+				<ul class="modal__list">
+					<li class="modal__list-item">
+						<input class="modal__input" type="tel" name="tel-number" placeholder="Номер телефона" required>
+					</li>
+					<li class="modal__list-item">
+						<input class="modal__input" type="email" name="email" placeholder="Чи email" required>
+					</li>
+				</ul>
+				<button class="modal__btn btn" type="submit" aria-label="кнопка надсилання запиту">Надіслати запит</button>
+			</form>
+			<button class="modal__close-btn btn" type="button" aria-label="кнопка закриття вікна"></button>
+		</div>
+		<div class="mask"></div>
 	</div>
 	<main class="main">
-		<section class="background background--middle background--shadow">
-			<h2>Послуги цього напрямку:</h2>
-			<ul>
-				<li>супровід інвестиційних проектів з розвитку портової інфраструктури;</li>
-				<li>паспортизація ГТС, внесення інформації про них в обов'язкові бази даних і реєстри;</li>
-				<li>оформлення дозвільної документації для будівництва портових терміналів;</li>
-				<li>оформлення дозвільної та іншої обов'язкової документації, необхідної для здійснення діяльності в порту (дозвіл на викиди, висновок по ОВНС, РТК і ін.);</li>
-				<li>супровід процедур, пов'язаних з орендою державного майна в порту;</li>
-				<li>супровід процедур, пов'язаних з підтвердженням статусу портового оператора, морського агента, лінії закордонного плавання;</li>
-				<li>супровід процедур, пов'язаних з включенням компанії в межі порту;</li>
-				<li>оскарження дій, пов'язаних з незаконним нав'язуванням послуг в порту компаніями-монополістами.</li>
-			</ul>
+		<div class="background background--middle background--shadow">
+			<section class="service-list main__service-list container">
+				<h2 class="service-list__title">Послуги цього напрямку:</h2>
+				<ul class="service-list__list">
+					<li class="service-list__list-style"><span class="service-list__item">супровід інвестиційних проектів з розвитку портової інфраструктури;</span></li>
+					<li class="service-list__list-style"><span class="service-list__item">паспортизація ГТС, внесення інформації про них в обов'язкові бази даних і реєстри;</span></li>
+					<li class="service-list__list-style"><span class="service-list__item">оформлення дозвільної документації для будівництва портових терміналів;</span></li>
+					<li class="service-list__list-style"><span class="service-list__item">оформлення дозвільної та іншої обов'язкової документації, необхідної для здійснення діяльності в порту (дозвіл на викиди, висновок по ОВНС, РТК і ін.);</span></li>
+					<li class="service-list__list-style"><span class="service-list__item">супровід процедур, пов'язаних з орендою державного майна в порту;</span></li>
+					<li class="service-list__list-style"><span class="service-list__item">супровід процедур, пов'язаних з підтвердженням статусу портового оператора, морського агента, лінії закордонного плавання;</span></li>
+					<li class="service-list__list-style"><span class="service-list__item">супровід процедур, пов'язаних з включенням компанії в межі порту;</span></li>
+					<li class="service-list__list-style"><span class="service-list__item">оскарження дій, пов'язаних з незаконним нав'язуванням послуг в порту компаніями-монополістами.</span></li>
+				</ul>
+			</section>
+		</div>
+		<section class="case main__service-case container">
+			<h2 class="visually-hidden">Our cases</h2>
+			<a class="case__link" href="#" aria-label="посилання на сторінку наших кейсів">
+				<article class="case__item">
+					<h3 class="case__item-title">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
+					<p class="case__item-text">Hillel IT School</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#" aria-label="посилання на сторінку наших кейсів">
+				<article class="case__item">
+					<h3 class="case__item-title">Підготовка комплексного юридичного висновку для європейського банку</h3>
+					<p class="case__item-text">WannaBiz</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#" aria-label="посилання на сторінку наших кейсів">
+				<article class="case__item">
+					<h3 class="case__item-title">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
+					<p class="case__item-text">tapgerine</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#" aria-label="посилання на сторінку наших кейсів">
+				<article class="case__item">
+					<h3 class="case__item-title">Представництво інтересів великого зернотрейдера в податковому спорі</h3>
+					<p class="case__item-text">3dlook</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#" aria-label="посилання на сторінку наших кейсів">
+				<article class="case__item">
+					<h3 class="case__item-title">Оскарження податкових повідомлень-рішень ДФС</h3>
+					<p class="case__item-text">adtelligent</p>
+				</article> 
+			</a>
+			<a class="case__link" href="#" aria-label="посилання на сторінку наших кейсів">
+				<article class="case__item">
+					<h3 class="case__item-title">Супровід проекту з кредитування агротрейдерів мальтійським банком</h3>
+					<p class="case__item-text">clikky</p>
+				</article> 
+			</a>
 		</section>
 	</main>
 	<footer class="footer">

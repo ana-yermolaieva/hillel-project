@@ -24,6 +24,7 @@
 
         &:hover .indicator__arrow {
             stroke: $red;
+            transition-duration: 0.3s;
         }
     }
 }

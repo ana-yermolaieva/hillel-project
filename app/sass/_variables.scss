@@ -2,6 +2,9 @@ $white: #ffffff;
 $purple: #323264;
 $purple-medium: #46466e;
 $purple-light: #686887;
+$purple-bg: rgba(50, 50, 100, 0.7);
+$purple-shadow: rgba(40, 40, 86, 0.5);
+$purple-shadow-80: rgba(40, 40, 86, 0.8);
 $red: #F0145A;
 
 $blue-link: #24a3ff;
@@ -18,12 +21,11 @@ $gray-medium: #e6e6f0;
 $gray-lang-bg-50: rgba(196, 196, 196, 0.5);
 $arrow-border: rgba(255, 255, 255, 0.5);
 
-$mask: rgba(0, 0, 0, 0.7);
-
 $gradient: linear-gradient(128deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
 $gradient-soft: linear-gradient(42deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 $gradient-red: linear-gradient(121deg, #F0145A 30.65%, #693264 107.33%);
 $gradient-supersoft: linear-gradient(228deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-light: linear-gradient(265deg, #F01432 0%, #323264 29.69%);
 $gradient-shadow-middle: #cacadb;
 $gradient-shadow-light: #e7e7f2;
 
