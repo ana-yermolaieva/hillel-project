@@ -3,11 +3,7 @@
 
     &__about {
         padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    &__about-main {
-        padding-bottom: 35px;
+        padding-bottom: 25px;
     }
 
     &__about-team {
@@ -18,8 +14,13 @@
 
 @media (min-width: 992px) {
     .background-light {
+        &__about {
+            padding-top: 50px;
+            padding-bottom: 75px;
+        }
+    
         &__about-main {
-            max-width: 1095px;
+            max-width: 1135px;
             margin: auto;
             padding-bottom: 80px;
         }

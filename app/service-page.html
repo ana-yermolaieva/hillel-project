@@ -43,7 +43,13 @@
 				</div>
 			</div>
 			<div class="header__menu">
-				<button class="header__menu-btn btn" type="button" aria-label="меню сайту"></button>
+				<button class="header__menu-btn btn" type="button" aria-label="меню сайту">
+					<svg  class="header__menu-btn-gam" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 10H25" stroke-width="2"/>
+						<path d="M7 16H25" stroke-width="2"/>
+						<path d="M7 22H25" stroke-width="2"/>
+					</svg>
+				</button>
 				<div class="header__menu-list header__menu-list-mobile">
 					<button class="header__menu-btn-close header__menu-btn-close--active btn" type="button" aria-label="закрити меню сайту"></button>
 					<a class="header__menu-link header__menu-link-mobile" href="about-page.html">о нас</a>
@@ -83,7 +89,7 @@
 		</div>
 		<div class="modal container background__modal">
 			<p class="modal__main-title">Ми хотіли б Вам допомогти</p>
-			<form action="https://fom.in.ua/echo" method="POST">
+			<form class="modal__form" action="https://fom.in.ua/echo" method="POST">
 				<ul class="modal__list">
 					<li class="modal__list-item">
 						<input class="modal__input" type="text" name="name" placeholder="Iм’я" required>
@@ -94,14 +100,14 @@
 				</ul>
 				<p class="modal__title">Як вам відповісти?</p>
 				<ul class="modal__list">
-					<li class="modal__list-item">
-						<input class="modal__input" type="tel" name="tel-number" placeholder="Номер телефона" required>
+					<li class="modal__list-item modal__list-item--mobile">
+						<input class="modal__input modal__input--invalid" type="tel" name="tel-number" placeholder="Номер телефона" required>
 					</li>
-					<li class="modal__list-item">
+					<li class="modal__list-item modal__list-item--mobile">
 						<input class="modal__input" type="email" name="email" placeholder="Чи email" required>
 					</li>
 				</ul>
-				<button class="modal__btn btn" type="submit" aria-label="кнопка надсилання запиту">Надіслати запит</button>
+				<button class="modal__btn modal__btn--sending modal__btn--sent btn" type="submit" aria-label="кнопка надсилання запиту">Надіслати запит</button>
 			</form>
 			<button class="modal__close-btn btn" type="button" aria-label="кнопка закриття вікна"></button>
 		</div>

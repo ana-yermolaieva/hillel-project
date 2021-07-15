@@ -2,6 +2,7 @@
     &__title {
         font-size: 32px;
         line-height: 38px;
+        letter-spacing: 0.6px;
         color: $red;
         margin-bottom: 20px;
     }
@@ -10,11 +11,11 @@
         font-size: 18px;
         line-height: 26px;
         color: $black;
-        margin-bottom: 20px;
+        margin-bottom: 19px;
     }
 
     &__info {
-        padding-top: 10px;
+        padding-top: 12px;
         padding-bottom: 14px;
         border-top: 4px solid $gray-medium;
     }
@@ -29,6 +30,7 @@
         line-height: 42px;
         color: $red;
         display: flex;
+        padding-bottom: 8px;
 
         &::before {
             content: "";
@@ -74,14 +76,15 @@
         }
 
         &__description-inner {
-            width: 61%;
+            width: 62%;
         }
 
         &__info-inner {
-            width: 39%;
+            width: 38%;
         }
 
         &__info {
+            padding-top: 5px;
             padding-left: 20px;
             border-top: none;
             position: relative;
@@ -90,8 +93,8 @@
                 content: "";
                 display: inline-flex;
                 width: 4px;
-                height: 240px;
-                top: 18px;
+                height: 305px;
+                top: 14px;
                 left: 0;
                 background-color: $gray-medium;
                 position: absolute;
@@ -116,12 +119,16 @@
             line-height: 30px;
         }
 
-        &__info::before {
-            height: 285px;
-        }
-
         &__item {
             margin-bottom: 40px;
+        }
+
+        &__item-value::before {
+            margin-right: 11px;
+        }
+
+        &__item-text {
+            padding-left: 5px;
         }
     }
 }

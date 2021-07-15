@@ -23,6 +23,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,6 +67,7 @@ a:hover {
 }
 
 .mask {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -125,7 +127,7 @@ a:hover {
 
 .background__service {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .background__modal {
@@ -156,6 +158,10 @@ a:hover {
     padding-top: 50px;
     padding-bottom: 60px;
   }
+  .background__service {
+    padding-top: 51px;
+    padding-bottom: 44px;
+  }
   .background__modal {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -168,11 +174,7 @@ a:hover {
 
 .background-light__about {
   padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.background-light__about-main {
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .background-light__about-team {
@@ -181,8 +183,12 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+  .background-light__about {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
   .background-light__about-main {
-    max-width: 1095px;
+    max-width: 1135px;
     margin: auto;
     padding-bottom: 80px;
   }
@@ -627,8 +633,6 @@ a:hover {
     grid-template-columns: auto auto;
     grid-template-rows: auto 30px;
     grid-row-gap: 15px;
-    padding-top: 50px;
-    padding-bottom: 56px;
   }
   .header__top-box {
     grid-column: 2 / 3;
@@ -757,7 +761,7 @@ a:hover {
 }
 
 .header-content-services__item {
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -786,7 +790,7 @@ a:hover {
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
-  padding-bottom: 30px;
+  padding-bottom: 19px;
 }
 
 .header-content-services__btn {
@@ -801,8 +805,8 @@ a:hover {
           box-shadow: 0px 0px 20px rgba(45, 111, 158, 0.5);
   background-color: #24a3ff;
   border-radius: 12px;
-  padding: 17px 39px 16px;
-  margin: 10px auto 0;
+  padding: 15px 39px 18px;
+  margin: 18px auto 0;
 }
 
 .header-content-services__btn-link:hover {
@@ -817,8 +821,8 @@ a:hover {
             animation-duration: 2s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
-    -webkit-animation-iteration-count: 5;
-            animation-iteration-count: 5;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
@@ -832,9 +836,24 @@ a:hover {
       background-color: #F0145A;
     }
   }
+  .header-content-services__btn-link:hover {
+    background-color: #0085ff;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  .header-content-services__btn-link:active {
+    background-color: #006ccf;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 @media (min-width: 992px) {
+  .header-content-services__btn-link {
+    margin-top: 22px;
+  }
   .header-content-services__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -846,6 +865,9 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 78px;
+    max-width: 1092px;
+    margin: auto;
   }
   .header-content-services__item-title, .header-content-services__item-text {
     max-width: 860px;
@@ -859,40 +881,6 @@ a:hover {
     font-size: 21px;
     line-height: 30px;
     text-align: center;
-  }
-  .header-content-services__btn {
-    -webkit-animation-name: consultation;
-            animation-name: consultation;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-    -webkit-animation-iteration-count: 5;
-            animation-iteration-count: 5;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  @-webkit-keyframes consultation {
-    100% {
-      background-color: #F0145A;
-    }
-  }
-  @keyframes consultation {
-    100% {
-      background-color: #F0145A;
-    }
-  }
-  .header-content-services__btn:hover {
-    background-color: #0085ff;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-  }
-  .header-content-services__btn:active {
-    background-color: #006ccf;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
 }
 
@@ -945,10 +933,11 @@ a:hover {
     padding-bottom: 55px;
   }
   .main__service-list {
-    padding-bottom: 80px;
+    padding-bottom: 65px;
   }
   .main__service-case {
-    padding-top: 60px;
+    padding-top: 61px;
+    padding-bottom: 43px;
   }
 }
 
@@ -1157,6 +1146,7 @@ a:hover {
 .about-main__title {
   font-size: 32px;
   line-height: 38px;
+  letter-spacing: 0.6px;
   color: #F0145A;
   margin-bottom: 20px;
 }
@@ -1165,11 +1155,11 @@ a:hover {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .about-main__info {
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 14px;
   border-top: 4px solid #e6e6f0;
 }
@@ -1186,6 +1176,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 8px;
 }
 
 .about-main__item-value::before {
@@ -1228,12 +1219,13 @@ a:hover {
     padding: 0 20px;
   }
   .about-main__description-inner {
-    width: 61%;
+    width: 62%;
   }
   .about-main__info-inner {
-    width: 39%;
+    width: 38%;
   }
   .about-main__info {
+    padding-top: 5px;
     padding-left: 20px;
     border-top: none;
     position: relative;
@@ -1244,8 +1236,8 @@ a:hover {
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 4px;
-    height: 240px;
-    top: 18px;
+    height: 305px;
+    top: 14px;
     left: 0;
     background-color: #e6e6f0;
     position: absolute;
@@ -1264,11 +1256,14 @@ a:hover {
     font-size: 21px;
     line-height: 30px;
   }
-  .about-main__info::before {
-    height: 285px;
-  }
   .about-main__item {
     margin-bottom: 40px;
+  }
+  .about-main__item-value::before {
+    margin-right: 11px;
+  }
+  .about-main__item-text {
+    padding-left: 5px;
   }
 }
 
@@ -1309,7 +1304,7 @@ a:hover {
   .about-banner__text {
     font-size: 96px;
     line-height: 113px;
-    letter-spacing: 63px;
+    letter-spacing: 67px;
   }
 }
 
@@ -1323,7 +1318,7 @@ a:hover {
 }
 
 .about-team__box {
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 40px;
 }
 
@@ -1338,6 +1333,7 @@ a:hover {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
+  letter-spacing: 0.7px;
   color: #F0145A;
 }
 
@@ -1352,10 +1348,10 @@ a:hover {
     padding: 0 20px;
   }
   .about-team__info-outer {
-    width: 61%;
+    width: 60%;
   }
   .about-team__title-outer {
-    width: 39%;
+    width: 40%;
   }
   .about-team__text {
     font-size: 21px;
@@ -1369,17 +1365,17 @@ a:hover {
 
 @media (min-width: 992px) {
   .about-team__box {
-    max-width: 1095px;
+    max-width: 1135px;
     margin-top: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 74px;
   }
 }
 
 .about-achievements {
   background-color: #f5f5fa;
   border-radius: 12px 12px 0px 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 27px;
 }
 
 .about-achievements__title {
@@ -1425,6 +1421,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .about-achievements__img {
@@ -1451,12 +1448,21 @@ a:hover {
   .about-achievements__item-outer--tab {
     display: block;
   }
+  .about-achievements__item-outer:hover {
+    opacity: 0.5;
+  }
   .about-achievements__slider-item--tab {
     display: none;
+  }
+  .about-achievements__slider-item:nth-child(4) {
+    margin-right: 0;
   }
 }
 
 @media (min-width: 992px) {
+  .about-achievements {
+    padding-bottom: 27px;
+  }
   .about-achievements__box {
     margin: 0 -20px;
   }
@@ -1469,6 +1475,9 @@ a:hover {
   }
   .about-achievements__slider-item--desktop {
     display: none;
+  }
+  .about-achievements__slider-item:nth-child(3) {
+    margin-right: 0;
   }
 }
 
@@ -1636,7 +1645,7 @@ a:hover {
 }
 
 .header-content-services__item {
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -1665,7 +1674,7 @@ a:hover {
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
-  padding-bottom: 30px;
+  padding-bottom: 19px;
 }
 
 .header-content-services__btn {
@@ -1680,8 +1689,8 @@ a:hover {
           box-shadow: 0px 0px 20px rgba(45, 111, 158, 0.5);
   background-color: #24a3ff;
   border-radius: 12px;
-  padding: 17px 39px 16px;
-  margin: 10px auto 0;
+  padding: 15px 39px 18px;
+  margin: 18px auto 0;
 }
 
 .header-content-services__btn-link:hover {
@@ -1696,8 +1705,8 @@ a:hover {
             animation-duration: 2s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
-    -webkit-animation-iteration-count: 5;
-            animation-iteration-count: 5;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
@@ -1711,9 +1720,24 @@ a:hover {
       background-color: #F0145A;
     }
   }
+  .header-content-services__btn-link:hover {
+    background-color: #0085ff;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  .header-content-services__btn-link:active {
+    background-color: #006ccf;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 @media (min-width: 992px) {
+  .header-content-services__btn-link {
+    margin-top: 22px;
+  }
   .header-content-services__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1725,6 +1749,9 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 78px;
+    max-width: 1092px;
+    margin: auto;
   }
   .header-content-services__item-title, .header-content-services__item-text {
     max-width: 860px;
@@ -1738,40 +1765,6 @@ a:hover {
     font-size: 21px;
     line-height: 30px;
     text-align: center;
-  }
-  .header-content-services__btn {
-    -webkit-animation-name: consultation;
-            animation-name: consultation;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-    -webkit-animation-iteration-count: 5;
-            animation-iteration-count: 5;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  @-webkit-keyframes consultation {
-    100% {
-      background-color: #F0145A;
-    }
-  }
-  @keyframes consultation {
-    100% {
-      background-color: #F0145A;
-    }
-  }
-  .header-content-services__btn:hover {
-    background-color: #0085ff;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-  }
-  .header-content-services__btn:active {
-    background-color: #006ccf;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
 }
 
@@ -2380,6 +2373,7 @@ a:hover {
 }
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -2392,6 +2386,7 @@ a:hover {
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
+  letter-spacing: 0.2px;
   color: #F0145A;
   margin-bottom: 20px;
 }
@@ -2416,20 +2411,17 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.modal__input, .modal__input:focus {
-  width: 100%;
-  padding: 18px 10px 14px;
-  background: #ffffff;
-  border: 2px solid transparent;
-  border-radius: 8px;
+.modal__list-item--mobile {
+  margin-bottom: 7px;
 }
 
 .modal__input {
   width: 100%;
-  padding: 18px 10px 14px;
+  padding: 17px 10px 12px;
   background: #ffffff;
   border: 2px solid transparent;
   border-radius: 8px;
+  outline: none;
 }
 
 .modal__input::-webkit-input-placeholder {
@@ -2462,17 +2454,17 @@ a:hover {
   color: #b3b3ba;
 }
 
-.modal__input:invalid {
-  border-color: #F0145A;
+.modal__input:focus {
+  border-color: #000000;
 }
 
 .modal__input--textarea {
-  font-family: "tt_normsregular", "Arial", sans-serif;
+  font-family: "tt_normsmedium", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  height: 160px;
-  padding-top: 15px;
+  height: 177px;
+  padding-top: 9px;
 }
 
 .modal__btn {
@@ -2487,8 +2479,22 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 31px auto 0;
-  padding: 18px 68px 15px;
+  margin: 20px auto 0;
+  padding: 17px 68px 16px;
+}
+
+.modal__btn:hover {
+  background-color: #0085ff;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.modal__btn:active {
+  background-color: #006ccf;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .modal__close-btn {
@@ -2514,10 +2520,17 @@ a:hover {
   .modal__main-title {
     font-size: 32px;
     line-height: 38px;
+    letter-spacing: 0.6px;
+  }
+  .modal__title {
+    margin-bottom: 7px;
   }
   .modal__close-btn {
     top: 15px;
     right: 15px;
+  }
+  .modal__list-item--mobile {
+    margin-bottom: 20px;
   }
 }
 
@@ -2568,19 +2581,25 @@ a:hover {
   padding-bottom: 10px;
 }
 
+.service-list__list {
+  padding-left: 24px;
+}
+
 .service-list__list-style {
   color: #F0145A;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .service-list__item {
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
-  padding-bottom: 10px;
 }
 
 @media (min-width: 992px) {
+  .service-list {
+    max-width: 1132px;
+  }
   .service-list__title {
     font-size: 24px;
     line-height: 28px;
@@ -2590,13 +2609,16 @@ a:hover {
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
-    -webkit-column-gap: 55px;
-       -moz-column-gap: 55px;
-            column-gap: 55px;
+    -webkit-column-gap: 68px;
+       -moz-column-gap: 68px;
+            column-gap: 68px;
+  }
+  .service-list__list-style {
+    padding-bottom: 15px;
   }
   .service-list__item {
     max-width: 480px;
-    letter-spacing: 0.9px;
+    letter-spacing: 0;
   }
 }
 

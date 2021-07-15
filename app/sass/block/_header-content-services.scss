@@ -1,6 +1,6 @@
 .header-content-services {
     &__item {
-        padding-bottom: 40px;
+        padding-bottom: 37px;
         border-bottom: 4px solid $arrow-border;
     }
 
@@ -29,7 +29,7 @@
         font-size: 18px;
         line-height: 26px;
         color: $white;
-        padding-bottom: 30px;
+        padding-bottom: 19px;
     }
 
     &__btn {
@@ -43,8 +43,8 @@
         box-shadow: 0px 0px 20px $blue-btn-shadow;
         background-color: $blue-link;
         border-radius: 12px;
-        padding: 17px 39px 16px;
-        margin: 10px auto 0;
+        padding: 15px 39px 18px;
+        margin: 18px auto 0;
 
         &:hover {
             color: $white;
@@ -58,7 +58,7 @@
             animation-name: consult;
             animation-duration: 2s;
             animation-delay: 2s;
-            animation-iteration-count: 5;
+            animation-iteration-count: 3;
             animation-timing-function: ease-out;
     
             @keyframes consult {
@@ -66,16 +66,34 @@
                     background-color: $red;
                 }
             }
+
+            &:hover {
+                background-color: $blue-link-hover;
+                animation-play-state: paused;
+                transition-duration: 0.3s;
+            }
+    
+            &:active {
+                background-color: $blue-link-active;
+                box-shadow: none;
+            }
         }
     }
 }
 
 @media (min-width: 992px) {
     .header-content-services {
+        &__btn-link {
+            margin-top: 22px;
+        }
+
         &__item {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 78px;
+            max-width: 1092px;
+            margin: auto;
         }
 
         &__item-title,
@@ -93,31 +111,6 @@
             font-size: 21px;
             line-height: 30px;
             text-align: center;
-        }
-
-        &__btn {
-            animation-name: consultation;
-            animation-duration: 2s;
-            animation-delay: 2s;
-            animation-iteration-count: 5;
-            animation-timing-function: ease-out;
-    
-            @keyframes consultation {
-                100% {
-                    background-color: $red;
-                }
-            }
-    
-            &:hover {
-                background-color: $blue-link-hover;
-                animation-play-state: paused;
-                transition-duration: 0.3s;
-            }
-    
-            &:active {
-                background-color: $blue-link-active;
-                box-shadow: none;
-            }
         }
     }
 }
