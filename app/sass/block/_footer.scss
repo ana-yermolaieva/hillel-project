@@ -8,6 +8,10 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         grid-row-gap: 20px;
+
+        &--transparent {
+            border-top-color: transparent;
+        }
     }
 
     &__address-box,

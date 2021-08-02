@@ -43,6 +43,13 @@
         }
     }
 
+    &--services-general {
+        background: $gradient-supersoft;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 0px 0px 12px 12px;
+    }
+
     &__index {
         padding-top: 20px;
         padding-bottom: 104px;
@@ -93,6 +100,11 @@
         &__service {
             padding-top: 51px;
             padding-bottom: 44px;
+        }
+
+        &--services-general {
+            padding-top: 20px;
+            padding-bottom: 50px;
         }
 
         &__modal {

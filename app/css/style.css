@@ -120,6 +120,13 @@ a:hover {
   background-color: #cacadb;
 }
 
+.background--services-general {
+  background: linear-gradient(228deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 0px 0px 12px 12px;
+}
+
 .background__index {
   padding-top: 20px;
   padding-bottom: 104px;
@@ -161,6 +168,10 @@ a:hover {
   .background__service {
     padding-top: 51px;
     padding-bottom: 44px;
+  }
+  .background--services-general {
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
   .background__modal {
     padding-top: 20px;
@@ -434,6 +445,10 @@ a:hover {
   color: #F0145A;
 }
 
+.header--services-general {
+  padding-bottom: 20px;
+}
+
 @media (min-width: 768px) {
   .header {
     grid-template-columns: 1fr auto;
@@ -664,6 +679,9 @@ a:hover {
   }
   .header__menu-link {
     margin: 1px 17px 0 0;
+  }
+  .header--services-general {
+    padding-bottom: 70px;
   }
 }
 
@@ -900,6 +918,10 @@ a:hover {
   margin-bottom: 85px;
 }
 
+.main__case--services-general {
+  margin-top: 40px;
+}
+
 .main__blog {
   padding-top: 20px;
   padding-bottom: 41px;
@@ -927,6 +949,9 @@ a:hover {
   }
   .main__case {
     margin-bottom: 97px;
+  }
+  .main__case--services-general {
+    margin-top: 60px;
   }
   .main__blog {
     padding-top: 40px;
@@ -2633,6 +2658,10 @@ a:hover {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-row-gap: 20px;
+}
+
+.footer__separator--transparent {
+  border-top-color: transparent;
 }
 
 .footer__address-box, .footer__contact, .footer__copyright {

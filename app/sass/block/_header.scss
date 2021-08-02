@@ -133,6 +133,10 @@
     &__menu-link--current {
         color: $red;
     }
+
+    &--services-general {
+        padding-bottom: 20px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -366,6 +370,10 @@
 
         &__menu-link {
             margin: 1px 17px 0 0;
+        }
+
+        &--services-general {
+            padding-bottom: 70px;
         }
     }
 }
