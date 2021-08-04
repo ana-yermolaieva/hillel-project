@@ -9,10 +9,26 @@
         color: $blue-link;
     }
 
+    &--gray {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $gray-bg;
+
+        &:hover {
+            background-color: $gray-bg-alt;
+        }
+    }
+
     &__arrow {
         margin-left: 5px;
         margin-top: 3px;
         stroke: $blue-link;
+
+        &--center {
+            margin-left: 13px;
+            margin-top: 8px;
+        }
     }
 }
 
@@ -25,6 +41,10 @@
         &:hover .indicator__arrow {
             stroke: $red;
             transition-duration: 0.3s;
+        }
+
+        &--gray:hover &__arrow {
+            stroke: $blue-link;
         }
     }
 }
