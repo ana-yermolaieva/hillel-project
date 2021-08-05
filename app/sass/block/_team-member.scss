@@ -1,0 +1,124 @@
+.team-member {
+    &__pic {
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        display: block;
+        text-align: center;
+    }
+
+    &__name{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: $red;
+        margin-bottom: 14px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        border-bottom: 4px solid $gray-medium;
+    }
+
+    &__position {
+        font-size: 16px;
+        line-height: 22px;
+        color: $gray-text;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        color: $blue-link;
+        margin-bottom: 10px;
+    }
+
+    &__about {
+        padding-top: 20px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        color: $black;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $purple;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .team-member {
+        &__box {
+            margin: 0 -20px;
+            display: flex;
+        }
+
+        &__pic,
+        &__item {
+            padding: 0 20px;
+        }
+
+        &__pic {
+            width: 40%;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__item {
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team-member {
+        display: flex;
+        justify-content: center;
+
+        &__name {
+            font-size: 42px;
+            line-height: 50px;
+            padding-top: 10px;
+        }
+
+        &__info {
+            flex-direction: row;
+        }
+
+        &__link {
+            &::before {
+                content: "";
+                display: flex;
+                width: 6px;
+                height: 6px;
+                background-image: url(../img/header-separator.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-top: 7px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
