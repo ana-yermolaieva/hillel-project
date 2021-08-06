@@ -89,6 +89,9 @@
             line-height: 50px;
             padding-top: 10px;
             padding-bottom: 80px;
+            max-width: 860px;
+            display: flex;
+            margin: auto;
         }
 
         &__item-outer {
@@ -135,7 +138,5 @@
             align-self: center;
             justify-self: end;
         }
-
-
     }
 }

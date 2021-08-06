@@ -22,7 +22,7 @@
             <a class="logo-box__logo" href="index.html">
                 <img class="logo-box__img" src="img/logo-hlegals-light.svg" alt="logo" aria-label="посилання на головну сторінку">
             </a>
-            <a class="logo-box__bread-crumbs logo-box__bread-crumbs--light" href="team.html">команда</a>
+            <a class="logo-box__bread-crumbs logo-box__bread-crumbs--light" href="contact.html">контакти</a>
         </div>
         <div class="header__top-box">
             <div class="header__lang-box">
@@ -53,41 +53,55 @@
                 <button class="header__menu-btn-close header__menu-btn-close--active btn" type="button" aria-label="закрити меню сайту"></button>
                 <a class="header__menu-link header__menu-link--light header__menu-link-mobile" href="about-page.html">о нас</a>
                 <a class="header__menu-link header__menu-link--light header__menu-link-mobile" href="services.html">послуги</a>
-                <a class="header__menu-link header__menu-link--light header__menu-link-mobile header__menu-link--light-current" href="team.html">команда</a>
+                <a class="header__menu-link header__menu-link--light header__menu-link-mobile" href="team.html">команда</a>
                 <a class="header__menu-link header__menu-link--light header__menu-link-mobile" href="publications.html">публікації</a>
-                <a class="header__menu-link header__menu-link--light header__menu-link-mobile" href="contact.html">контакти</a>
+                <a class="header__menu-link header__menu-link--light header__menu-link-mobile header__menu-link--light-current" href="contact.html">контакти</a>
             </div>
         </div>
     </header>
-    <main>
-        <div class="team-member">
-            <section class="team-member__box container container background-light__team-member">
-                <div class="team-member__pic">
-                    <picture>
-                        <source media="(min-width: 992px)" srcset="img/team-olexander.jpg 1x, img/team-olexander@2x.jpg">
-                        <img class="team-member__img" src="img/team-member-olexander-mobile.jpg" srcset="img/team-member-olexander-mobile@2x.jpg 2x" alt="фотографія члена команди">
-                    </picture>
-                </div> 
-                <article class="team-member__item">
-                    <h1 class="team-member__name">Олександр Кац</h1>
-                    <div class="team-member__info">
-                        <p class="team-member__position">Керуючий партнер</p>
-                        <a class="team-member__link" href="mailto:kac@hlegals.net" aria-label="посилання на особисту поштову скриньку">kac@hlegals.net</a>
-                        <a class="team-member__link" href="https://www.linkedin.com/" aria-label="посилання на профіль в LinkedIn">Профіль в LinkedIn</a>
-                    </div>
-                    <div class="team-member__about">
-                        <p class="team-member__text">Олександр очолює практику міжнародної торгівлі та шиппінгу. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировинних товарів і перевезенням товарів морем.</p>
-                        <p class="team-member__text">Представляє інтереси судновласників, експедиторів, вантажовласників, морських агентів, контейнерних ліній, а також міжнародних банків і клубів P & I.</p>
-                        <h2 class="team-member__title">Освіта</h2>
-                        <p class="team-member__text">Національний університет «Одеська юридична академія», магістр права.</p>
-                        <h2 class="team-member__title">Досвід роботи</h2>
-                        <p class="team-member__text">До його професійного досвіду відноситься врегулювання суперечок за англійським правом і представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Данило також представляє інтереси клієнтів у державних судах України по аналогічним спорах, а також в МКАС і МАК при ТПП України</p>
-                    </div>
-                </article>
-            </section>
-        </div>
+    <main class="main">
+        <section class="contact">
+            <h1 class="visually-hidden">Контакти</h1>
+            <article class="contact__box">
+                <h2 class="visually-hidden">Адреса та контакти</h2>
+                <p class="contact__address">Одеса,<br>Адміральський пр., 3</p>
+                <a class="contact__tel" href="tel:+380503901595" aria-label="телефон для зв'язку">+38 (050) 390 15 95</a>
+                <a class="contact__email" href="mailto:contact@hlegals.net" aria-label="електронна пошта для зв'язку">contact@hlegals.net</a>
+                <a class="contact__fb" href="https://www.facebook.com/" aria-label="посилання на нашу сторінку на фейсбук">
+                    <svg class="contact__fb-icon" viewBox="0 0 39 38" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)">
+                        <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"/></g><defs><clipPath id="clip01">
+                        <rect width="38" height="38" fill="white" transform="translate(0.5)"/></clipPath></defs>
+                    </svg>
+                    <p class="contact__fb-text">Наша сторінка в фейсбуці</p>
+                </a>
+            </article>
+            <article class="contact__modal modal">
+                <h2 class="modal__main-title">Ми хотіли б Вам допомогти</h2>
+                <form class="modal__form" action="https://fom.in.ua/echo" method="POST">
+                    <ul class="modal__list">
+                        <li class="modal__list-item">
+                            <input class="modal__input" type="text" name="name" placeholder="Iм’я" required>
+                        </li>
+                        <li class="modal__list-item">
+                            <textarea class="modal__input modal__input--textarea" name="message" placeholder="Повідомлення" required></textarea>
+                        </li>
+                    </ul>
+                    <p class="modal__title">Як вам відповісти?</p>
+                    <ul class="modal__list">
+                        <li class="modal__list-item modal__list-item--mobile">
+                            <input class="modal__input modal__input--invalid" type="tel" name="tel-number" placeholder="Номер телефона" required>
+                        </li>
+                        <li class="modal__list-item modal__list-item--mobile">
+                            <input class="modal__input" type="email" name="email" placeholder="Чи email" required>
+                        </li>
+                    </ul>
+                    <button class="modal__btn modal__btn--sending modal__btn--sent btn" type="submit" aria-label="кнопка надсилання запиту">Надіслати запит</button>
+                </form>
+            </article>
+        </section>
+        <iframe class="main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.638467472373!2d30.737941414522865!3d46.436044979124404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63396894457b7%3A0x7f6c5236cbcb70c8!2z0JDQtNC80LjRgNCw0LvRjNGB0LrQuNC5INC_0YDQvtGB0L8uLCAzLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1628278541741!5m2!1sru!2sua" style="border:0;" loading="lazy"></iframe>
     </main>
-    <footer class="footer footer--round">
+    <footer class="footer">
 		<div class="container">
 			<div class="footer__separator footer__separator--transparent footer__separator--round">
 				<div class="footer__address-box">
