@@ -41,6 +41,14 @@
     }
 }
 
+@media (min-width: 879px) {
+    .main {
+        &__publication {
+            max-width: 909px;
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .main {
         &__about {
