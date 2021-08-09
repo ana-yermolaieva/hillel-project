@@ -2998,6 +2998,10 @@ a:hover {
   text-align: center;
 }
 
+.publication__img--round {
+  border-radius: 12px 12px 0 0;
+}
+
 .publication__title {
   font-size: 22px;
   line-height: 26px;
@@ -3011,6 +3015,7 @@ a:hover {
   line-height: 38px;
   color: #F0145A;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 .publication__title-date {
@@ -3092,6 +3097,9 @@ a:hover {
 }
 
 @media (min-width: 879px) {
+  .publication__img--round {
+    border-radius: 12px;
+  }
   .publication__title {
     font-size: 32px;
     line-height: 38px;
@@ -3099,7 +3107,6 @@ a:hover {
   .publication__title--red {
     font-size: 42px;
     line-height: 50px;
-    text-align: justify;
   }
   .publication__text--purple {
     font-size: 24px;

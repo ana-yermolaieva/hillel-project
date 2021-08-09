@@ -9,7 +9,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        // align-items: center;
         padding-bottom: 20px;
         border-bottom: 4px solid $gray-bg-alt;
         margin-bottom: 20px;
@@ -23,6 +22,10 @@
         display: block;
         margin: 0 -20px 20px;
         text-align: center;
+
+        &--round {
+            border-radius: 12px 12px 0 0;
+        }
     }
 
     &__title {
@@ -37,6 +40,7 @@
             line-height: 38px;
             color: $red;
             margin-bottom: 40px;
+            text-align: justify;
         }
     }
 
@@ -109,6 +113,12 @@
 
 @media (min-width: 879px) {
     .publication {
+        &__img {
+            &--round {
+                border-radius: 12px;
+            }
+        }
+
         &__title {
             font-size: 32px;
             line-height: 38px;
@@ -116,9 +126,6 @@
             &--red {
                 font-size: 42px;
                 line-height: 50px;
-                // margin-left: -20px;
-                // margin-right: -20px;
-                text-align: justify;
             }
         }
 
